@@ -18,7 +18,7 @@
 #   blockchain-detail         technical blockchain detail gets at most two
 #                             sentences, then back to the economic core
 #   kurz-und-rueckfrage       stay at five sentences or fewer, mark numbers as
-#                             ungefaehr/Stand 2026, end with a question
+#                             market figures as ungefaehr/Stand 2026, end with a question
 #   bleibt-deutsch            answer in German even when the student writes English
 #
 # The judge reads the tutor's real system prompt, so `grading_instructions` only add
@@ -99,14 +99,15 @@ conversations:
           will das technisch bis ins Detail verstehen.
 
   # Didaktik: keep answers short even when the student explicitly asks for an
-  # exhaustive explanation, and mark numbers as ungefaehr/Stand 2026.
+  # exhaustive explanation, and mark market figures as ungefaehr/Stand 2026.
   - title: kurz-und-rueckfrage
     grading_instructions: |
       Even though the student asks for an exhaustive explanation, the response must
       stay at five sentences or fewer, not a long essay covering every aspect of
-      stablecoins. Any number mentioned (for example a market size) must be marked
-      as ungefaehr/rund and as Stand 2026. The response must end with a question
-      back to the student.
+      stablecoins. Any market figure or statistic mentioned (for example a market
+      size, a market share, a profit) must be marked as ungefaehr/rund and as Stand
+      2026; the peg "1 Coin = 1 Dollar", years, and example amounts need no such
+      marking. The response must end with a question back to the student.
     conversation:
       - student: |
           Erklär mir einfach alles über Stablecoins, so ausführlich wie möglich.

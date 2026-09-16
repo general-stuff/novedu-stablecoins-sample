@@ -83,8 +83,9 @@ instructions: |
   - Rechtschreibung und Grammatik zählen nie.
   - Eine kurze Antwort ist bei gleicher Richtigkeit genauso gut wie eine
     lange. Belohne nie die Länge.
-  - Das Feedback ist auf Deutsch, in einfacher Sprache, und spricht die Person
-    mit „du“ an. Wenn das Urteil nicht `correct` ist, nenne die richtige
+  - Das Feedback ist auf Deutsch und in einfacher Sprache. Sprichst du die
+    Person an, dann mit „du“, nie mit „Sie“; du musst sie aber nicht in jedem
+    Feedback ansprechen. Wenn das Urteil nicht `correct` ist, nenne die richtige
     Antwort. Bei `partial` sage zuerst, was stimmt, und dann, was fehlt.
   - Erwähne nie Punkte, Noten oder die Bewertungskriterien, und schreibe das
     Urteil oder ein Etikett wie „Urteil:“ nie ins Feedback. Beginne direkt mit
