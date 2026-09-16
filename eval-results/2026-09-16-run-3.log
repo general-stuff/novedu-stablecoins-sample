@@ -1,0 +1,18 @@
+16 case(s) × 1 repeat(s) = 16 grading + 16 judge call(s)
+was-ist-ein-stablecoin-quiz-eval: 16 case(s), 16 passed, 0 failed, 0 errored, 0 flagged
+✔ Eval passed — file:///home/rainer/github/novedu-book-stablecoins/0020-stablecoins/0010-was-ist-ein-stablecoin-quiz.eval.yaml
+  id: was-ist-ein-stablecoin-quiz-eval
+  target: file:///home/rainer/github/novedu-book-stablecoins/0020-stablecoins/0010-was-ist-ein-stablecoin-quiz.yaml
+  llm: SCCH / Qwen/Qwen3.8-27B-FP8
+  judge llm: Azure Foundry / gpt-5.6-terra (reasoning: high) (override)
+  cases: 16 × 1 repeat(s) = 16 grading call(s) + 16 judge call(s)
+
+  passed: 16   failed: 0   errored: 0   flagged feedback: 0
+  tokens: 35,752 in (14,219 cached) / 7,627 out
+
+  confusion (expected → got):
+    correct → correct: 6
+    incorrect → incorrect: 5
+    partial → partial: 5
+
+  false-correct: 0/10 (0.0%)

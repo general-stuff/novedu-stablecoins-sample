@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="Helvetica, Arial, sans-serif">
+  <title>Zwei Herausgeber von Dollar-Stablecoins im Vergleich</title>
+  <!-- Eigene Darstellung für das Quiz zum Kapitel „Was ist ein Stablecoin?“. Zahlen frei erfunden. -->
+  <rect x="0" y="0" width="760" height="400" fill="#ffffff"/>
+
+  <!-- Herausgeber A -->
+  <g>
+    <text x="190" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Herausgeber A</text>
+
+    <text x="100" y="76" text-anchor="middle" font-size="15" fill="#1a1a1a">Ausgegebene Coins</text>
+    <rect x="45" y="90" width="110" height="240" fill="#4a7ab5" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="100" y="205" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">100 Mio.</text>
+    <text x="100" y="228" text-anchor="middle" font-size="15" fill="#ffffff">Coins</text>
+
+    <text x="280" y="76" text-anchor="middle" font-size="15" fill="#1a1a1a">Reserven</text>
+    <rect x="225" y="90" width="110" height="192" fill="#7fb069" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="280" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">80 Mio. $</text>
+    <text x="280" y="201" text-anchor="middle" font-size="14" fill="#1a1a1a">Staatsanleihen</text>
+    <rect x="225" y="282" width="110" height="48" fill="#c7e0b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="280" y="302" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">20 Mio. $</text>
+    <text x="280" y="321" text-anchor="middle" font-size="14" fill="#1a1a1a">Bargeld</text>
+
+    <text x="190" y="362" text-anchor="middle" font-size="16" fill="#1a1a1a">Reserven insgesamt: 100 Mio. $</text>
+  </g>
+
+  <line x1="380" y1="30" x2="380" y2="375" stroke="#999999" stroke-width="1" stroke-dasharray="6 6"/>
+
+  <!-- Herausgeber B -->
+  <g>
+    <text x="570" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Herausgeber B</text>
+
+    <text x="480" y="76" text-anchor="middle" font-size="15" fill="#1a1a1a">Ausgegebene Coins</text>
+    <rect x="425" y="90" width="110" height="240" fill="#4a7ab5" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="480" y="205" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">100 Mio.</text>
+    <text x="480" y="228" text-anchor="middle" font-size="15" fill="#ffffff">Coins</text>
+
+    <text x="660" y="76" text-anchor="middle" font-size="15" fill="#1a1a1a">Reserven</text>
+    <rect x="605" y="90" width="110" height="72" fill="none" stroke="#999999" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="605" y="162" width="110" height="144" fill="#7fb069" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="660" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">60 Mio. $</text>
+    <text x="660" y="249" text-anchor="middle" font-size="14" fill="#1a1a1a">Staatsanleihen</text>
+    <rect x="605" y="306" width="110" height="24" fill="#c7e0b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="660" y="323" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">10 Mio. $ Bargeld</text>
+
+    <text x="570" y="362" text-anchor="middle" font-size="16" fill="#1a1a1a">Reserven insgesamt: 70 Mio. $</text>
+  </g>
+
+  <text x="380" y="392" text-anchor="middle" font-size="12" fill="#666666">Zahlen frei erfunden. Jeder Coin soll 1 Dollar wert sein.</text>
+</svg>

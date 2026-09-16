@@ -22,8 +22,9 @@ self-checks. Eval files are teacher-only test data; never publish them as
 activities or mint codes for them.
 
 This is a **sample book**, so every quiz is self-contained: no fragment
-libraries, no compound quizzes, no images, no research questions. The grading
-context is repeated inline in every quiz (it is short).
+libraries, no compound quizzes, no research questions. The grading context is
+repeated inline in every quiz (it is short). Exactly one question carries a
+content image (see "Content images" below); do not add images elsewhere.
 
 Ground truth for the platform lives in the Novedu repo
 (`~/github/chat-prototype`): authoring guide `activities/quizzes/README.md`,
@@ -127,6 +128,23 @@ everything).
 - `id`s are permanent — they key the teacher statistics. Choose meaningful
   kebab-case; never rename after publishing.
 - Four to five questions per chapter.
+
+## Content images
+
+The first chapter quiz has one question with an `image:` block
+(`zwei-herausgeber-im-bild` in `0020-stablecoins/0010-was-ist-ein-stablecoin-quiz.yaml`).
+It exists to show the feature; keep it the only one. Rules that come with it:
+
+- The picture is an SVG next to the quiz file, referenced as
+  `src: ./<file>.svg` (relative to the quiz's own raw URL, so `git push`
+  publishes it). Hosting the image in the app (`hosted: true`, name from the
+  Images page or `novedu-cli images upload`) also works but ties the quiz to
+  one teacher's image store; the relative path keeps a fork self-contained.
+- Draw the picture yourself (no licence questions), keep every number in it
+  fictional, and write `alt` as a full description in German.
+- The grader never sees the image. The rubric therefore starts with one
+  `Im Bild:` line that states what the picture shows, and the eval answers
+  describe what the student saw.
 
 ## Rubric (`evaluation`) template
 

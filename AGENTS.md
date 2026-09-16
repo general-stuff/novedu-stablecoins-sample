@@ -9,9 +9,12 @@ numbered folders, and `quarto render` turns them into an HTML book and one PDF
 handout (same setup as the Creative Coding books in `~/github/ddp-second`).
 
 It is a **sample, not real teaching material**. Everything stays as plain as
-it can be: no fragment libraries, no compound quizzes, no images, no tools, no
-research boxes. Every Novedu YAML file is self-contained so a teacher can read
-one file and understand the whole activity.
+it can be: no fragment libraries, no compound quizzes, no tools, no research
+boxes. Every Novedu YAML file is self-contained so a teacher can read one file
+and understand the whole activity. The one deliberate extra is a single
+content image in the first chapter quiz (`0020-stablecoins/0010-zwei-herausgeber.svg`),
+kept to show that a quiz question can carry a picture; no other activity
+uses images.
 
 The facts, numbers, and dates in the chapters were researched in September
 2026 and cross-checked against each other; the chapters and the tutor's

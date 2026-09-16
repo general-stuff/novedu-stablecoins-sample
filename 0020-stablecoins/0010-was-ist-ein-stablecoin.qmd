@@ -102,8 +102,9 @@ Stablecoins. Der Alltagseinsatz steht am Anfang.
 
 ## Teste dein Wissen {#sec-was-ist-ein-stablecoin-quiz}
 
-Fünf kurze Fragen zum Kapitel: was ein Stablecoin ist, wie er seinen Wert
-hält, wie der Herausgeber daran verdient, was ihn von Bitcoin unterscheidet,
-und was mit deinem Geld passiert, wenn der Herausgeber pleitegeht.
+Fünf kurze Fragen zum Kapitel: was ein Stablecoin ist, welcher von zwei
+Herausgebern in einem Bild sein Versprechen halten kann, wie der Herausgeber
+daran verdient, was ihn von Bitcoin unterscheidet, und was mit deinem Geld
+passiert, wenn der Herausgeber pleitegeht.
 
 {{< quiz was-ist-ein-stablecoin title="Was ist ein Stablecoin?" >}}

@@ -17,8 +17,10 @@ Jeder Push auf `main` veröffentlicht beides über GitHub Pages: das Buch unter
 
 Die technische Struktur (Quarto-Buch, Shortcodes, Aktivitäts-Registry, Skills,
 CI) ist von den Creative-Coding-Büchern übernommen. Bewusst weggelassen, weil es
-ein Beispiel ist: Fragment-Bibliotheken, Sammel-Quizzes, Bilder in Fragen,
-Tools im Tutor. Jede Aktivität ist eine einzelne, für sich lesbare YAML-Datei.
+ein Beispiel ist: Fragment-Bibliotheken, Sammel-Quizzes, Tools im Tutor. Jede
+Aktivität ist eine einzelne, für sich lesbare YAML-Datei. Eine einzige Frage im
+ersten Quiz zeigt ein Bild (eine SVG-Grafik neben der Quiz-Datei), damit das
+Beispiel auch diese Möglichkeit vorführt.
 
 ## Aufbau des Repositories
 

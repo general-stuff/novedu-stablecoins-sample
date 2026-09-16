@@ -73,24 +73,44 @@ questions:
       Falsch: verwechselt den Stablecoin mit Bitcoin oder mit staatlichem
       Geld wie dem digitalen Euro.
 
-  - id: wert-bei-einem-dollar
-    title: "Wie der Wert bei 1 Dollar bleibt"
+  # The one question in this book with a content image. The SVG sits next to
+  # this file and is referenced by a path relative to the quiz's own URL, so a
+  # push publishes both. (Alternative: upload the image on the app's Images
+  # page or with `novedu-cli images upload` and reference it by name with
+  # `hosted: true`.) The grader never sees the image, so the rubric describes it.
+  - id: zwei-herausgeber-im-bild
+    title: "Zwei Herausgeber im Vergleich"
+    image:
+      src: ./0010-zwei-herausgeber.svg
+      alt: |
+        Zwei Herausgeber von Dollar-Stablecoins nebeneinander. Herausgeber A
+        hat 100 Millionen Coins ausgegeben und hält 100 Millionen Dollar
+        Reserven: 80 Millionen in Staatsanleihen und 20 Millionen in Bargeld.
+        Herausgeber B hat ebenfalls 100 Millionen Coins ausgegeben, hält aber
+        nur 70 Millionen Dollar Reserven: 60 Millionen in Staatsanleihen und
+        10 Millionen in Bargeld. Bei B bleibt ein Teil des Reservebalkens leer.
+      credit: Eigene Darstellung, Zahlen frei erfunden
     question: |
-      Wie hält ein reservegedeckter (fiat-gedeckter) Stablecoin seinen Wert
-      bei genau 1 Dollar?
+      Das Bild zeigt zwei Herausgeber von Dollar-Stablecoins. Welcher von
+      beiden kann sein Versprechen „1 Coin = 1 Dollar“ wirklich halten, und
+      woran siehst du das im Bild?
     evaluation: |
-      Erwartet: Für jeden ausgegebenen Coin liegt 1 Dollar in Bargeld oder
-      sicheren Staatsanleihen beim Herausgeber, und jeder kann den Coin dort
-      jederzeit gegen 1 Dollar zurücktauschen. Dieses Rücktauschversprechen
-      hält den Kurs bei 1 Dollar.
-      Erforderlich: (1) für jeden Coin liegt echtes Geld oder eine sichere
-      Anlage als Reserve bereit; (2) der Coin lässt sich jederzeit 1:1 gegen
-      Dollar zurücktauschen.
-      Teilweise: nennt nur eine der beiden Aspekte, zum Beispiel „es gibt
-      Reserven“ ohne den Rücktausch, oder „man kann ihn zurücktauschen“ ohne
-      die Reserven zu erwähnen.
-      Falsch: sagt, der Kurs werde von einem Computerprogramm oder durch
-      Angebot und Nachfrage allein stabil gehalten, ohne echte Reserven.
+      Im Bild: Herausgeber A hat 100 Millionen Coins ausgegeben und hält 100
+      Millionen Dollar Reserven (80 Millionen Staatsanleihen, 20 Millionen
+      Bargeld). Herausgeber B hat ebenfalls 100 Millionen Coins ausgegeben,
+      hält aber nur 70 Millionen Dollar Reserven.
+      Erwartet: Herausgeber A. Bei ihm liegt für jeden ausgegebenen Coin ein
+      Dollar als Reserve bereit, also kann er jeden Coin jederzeit 1:1
+      zurücktauschen. Bei B fehlen für 30 Millionen Coins die Reserven, sein
+      Versprechen ist nicht voll gedeckt.
+      Erforderlich: (1) nennt Herausgeber A; (2) begründet mit dem Vergleich
+      von Reserven und ausgegebenen Coins: bei A ein Dollar pro Coin, bei B
+      weniger (Formulierungen wie „bei B fehlen 30 Millionen“ oder „100 zu
+      100 gegen 70 zu 100“ zählen).
+      Teilweise: nennt A, begründet aber nur mit „mehr Reserven“ oder „mehr
+      Geld“, ohne die Reserven mit der Zahl der Coins zu vergleichen.
+      Falsch: nennt B, oder sagt, beide könnten das Versprechen halten, weil
+      beide Reserven besitzen.
 
   - id: geschaeftsmodell-herausgeber
     title: "Wie der Herausgeber Geld verdient"

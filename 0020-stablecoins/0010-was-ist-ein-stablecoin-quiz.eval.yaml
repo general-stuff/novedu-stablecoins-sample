@@ -26,22 +26,28 @@ questions:
         answer: |
           ein stablecoin ist einfach bitcoin nur mit einem anderen namen
 
-  - question: wert-bei-einem-dollar
+  # Image question: the eval answers describe what the student saw, because
+  # the grader only gets the question text and the rubric.
+  - question: zwei-herausgeber-im-bild
     answers:
       - expect: correct
         answer: |
-          für jeden coin liegt bei der firma ein echter dollar oder eine
-          sichere anleihe. man kann den coin jederzeit gegen 1 dollar
-          zurücktauschen, deshalb bleibt er bei 1 dollar
-      # Names the retausch promise but not the reserves behind it.
+          herausgeber a. der hat für jeden coin einen dollar in der reserve,
+          100 millionen coins und 100 millionen dollar. bei b fehlen 30
+          millionen, der kann nicht alle coins zurücktauschen
+      # Everyday paraphrase of the same comparison, no "Reserve" vocabulary.
+      - expect: correct
+        answer: |
+          a, bei dem passt die kasse zu den coins, 100 zu 100. bei b sind nur
+          70 in der kasse für 100 coins
+      # Right issuer, but the reason never compares reserves with coins.
       - expect: partial
         answer: |
-          du kannst ihn immer gegen einen dollar eintauschen bei der firma
+          a, weil der einfach mehr geld hat als b
       - expect: incorrect
         answer: |
-          ein programm rechnet automatisch aus wie viele coins es geben darf
-          und hält dadurch den preis stabil, echte dollar braucht es dafür
-          nicht
+          beide können das, weil beide haben ja reserven und staatsanleihen
+          dahinter
 
   - question: geschaeftsmodell-herausgeber
     answers:
