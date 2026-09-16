@@ -1,0 +1,68 @@
+---
+title: "Dein KI-Tutor"
+---
+
+Beim Lesen tauchen Fragen auf, die der Text gerade nicht beantwortet. Warum
+tauscht jemand in Buenos Aires sein Gehalt sofort in digitale Dollar? Was
+passiert mit deinem Geld, wenn eine Firma wie Tether pleitegeht? Für genau
+solche Fragen gibt es einen KI-Tutor auf
+[Novedu](https://novedu.at), der Lernplattform, die dieses Buch begleitet.
+Der Tutor ist ein Chat, der das Thema dieses Buchs kennt: Stablecoins, Geld,
+Zentralbanken, Regulierung und die Weltwirtschaft. Du öffnest ihn, tippst
+deine Frage, und bekommst eine Antwort.
+
+## Wie du mit dem Tutor arbeitest {#sec-tutor-wie-arbeiten}
+
+Stell dem Tutor eine Frage, und du bekommst keinen Vortrag. Er antwortet in
+ein paar Sätzen, erklärt den Kern mit einem Alltagsbeispiel wie einem
+Gutschein oder einem Ferialjob, und stellt dir am Ende meist eine Frage
+zurück. Das ist
+Absicht: Er will dich zum Nachdenken bringen, nicht dir die Antwort vorkauen.
+Hast du eine falsche Vorstellung, etwa dass ein Stablecoin einfach wie
+Bitcoin funktioniert, hakt er nach, statt dich wie ein Lehrbuch zu
+korrigieren.
+
+Der Tutor bleibt bei seinem Thema. Frag ihn nach Stablecoins, nach Geld, nach
+Zentralbanken, nach Regulierung oder nach der Weltwirtschaft, und er
+antwortet dir. Frag ihn nach deiner Mathe-Schularbeit oder nach etwas völlig
+anderem, und er führt dich freundlich zurück zum Thema dieses Buchs. Er
+antwortet immer auf Deutsch, auch wenn du deine Frage auf Englisch stellst.
+
+Der Tutor gibt dir keine Anlageberatung. Er sagt dir nicht, welchen Coin du
+kaufen sollst, und er rät dir auch nicht davon ab, weil das keine Frage ist,
+die ein Schulbuch oder ein Tutor beantwortet. Und niemand benotet den Chat. Er
+läuft anonym, was du fragst, bleibt zwischen dir und dem Tutor.
+
+## Gute Fragen an den Tutor {#sec-tutor-gute-fragen}
+
+Am Anfang eines leeren Chats fällt vielen nichts ein. Diese fünf Fragen
+zeigen, wie eine gute Frage aussieht:
+
+- Was ist der Unterschied zwischen Bitcoin und einem Stablecoin?
+- Warum tauschen Leute in Argentinien ihr Gehalt in digitale Dollar?
+- Was ist beim Terra-Crash 2022 passiert?
+- Warum macht sich die EZB Sorgen wegen Stablecoins?
+- Wie verdient Tether Geld, wenn es keine Zinsen zahlt?
+
+Jede davon fragt nach einer Sache, die in diesem Buch vorkommt, und lässt
+sich in ein paar Sätzen beantworten. Genauso gut kannst du eine eigene Frage
+stellen, zu etwas, das du in einem Kapitel gelesen und nicht ganz verstanden
+hast, oder zu einer Behauptung, die dir komisch vorkommt.
+
+## Was der Tutor nicht kann {#sec-tutor-grenzen}
+
+Ein KI-Tutor ist kein Faktenlexikon. Er kann sich irren, genauso wie ein
+Mensch sich irren kann, nur ohne dass du es an der Stimme hörst. Die Zahlen,
+die er nennt, sind gerundet und beschreiben den Stand 2026, genau wie im
+ganzen Buch. Sie sind Größenordnungen, keine exakten Werte. Wenn dir eine
+Antwort komisch vorkommt oder nicht zu dem passt, was du im Kapitel gelesen
+hast, glaub nicht automatisch dem Tutor. Schau im Kapitel nach, oder frag
+deine Lehrkraft.
+
+## So öffnest du den Tutor {#sec-tutor-oeffnen}
+
+Der Tutor wartet in der Box unten. Jedes inhaltliche Kapitel dieses Buchs
+verlinkt denselben Tutor noch einmal, gleich nach der Einleitung, du musst
+dir also keine Adresse merken.
+
+{{< tutor stablecoin-tutor >}}

@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/quizzes/quiz-yaml.schema.json
+# Quiz zum Kapitel „Wenn das Versprechen bricht“ (0020-stablecoins/0020-wenn-das-versprechen-bricht.qmd).
+
+id: wenn-das-versprechen-bricht-quiz
+name: "Quiz: Wenn das Versprechen bricht"
+title: "Teste dein Wissen: Wenn das Versprechen bricht"
+description: |
+  Fünf kurze Fragen zum Kapitel *Wenn das Versprechen bricht*. Antworte in
+  eigenen Worten. Es gibt keine Antwortmöglichkeiten zum Anklicken, und das
+  Quiz ist anonym: Es ist für dich da, damit du siehst, was du schon
+  verstanden hast und was du noch einmal lesen solltest. Ein bis zwei Sätze
+  reichen meistens.
+
+llm:
+  model: Qwen/Qwen3.8-27B-FP8
+  provider: SCCH
+
+# Shared context for BOTH the grader and the discussion chat. Identical in
+# every quiz of this book (keep it so: edit all three when you change it).
+instructions: |
+  Die Schülerinnen und Schüler sind 14 bis 18 Jahre alt und besuchen den
+  Wirtschaftskundeunterricht einer österreichischen Schule. Sie haben das
+  Kapitel „Wenn das Versprechen bricht“ eines kurzen Buchs über Stablecoins
+  gelesen. Sie kennen die drei Funktionen des Geldes, den Unterschied
+  zwischen Bargeld und Bankguthaben, Inflation und Wechselkurse.
+  Blockchain-Technik kennen sie nicht und müssen sie nicht erklären.
+
+  Bewertung. Die Kriterien jeder Frage nennen die erwartete Antwort und die
+  Aspekte, die die Antwort enthalten muss. Prüfe die inhaltliche Richtigkeit:
+  - `correct`: Jeder erforderliche Aspekt ist vorhanden, und nichts in der
+    Antwort ist falsch.
+  - `partial`: Ein Teil der erforderlichen Aspekte ist vorhanden, oder die
+    Antwort ist im Kern richtig, enthält aber einen falschen Punkt.
+  - `incorrect`: Kein erforderlicher Aspekt ist vorhanden, oder die Kernaussage
+    ist falsch.
+  Wenn du zwischen zwei Urteilen schwankst, nimm das niedrigere.
+
+  - Die Schülerinnen und Schüler antworten in eigenen Worten und oft
+    umgangssprachlich. Alltagsformulierungen zählen, wenn die Idee stimmt;
+    verlange keinen Fachbegriff, den die Kriterien nicht nennen.
+  - Rechtschreibung und Grammatik zählen nie.
+  - Eine kurze Antwort ist bei gleicher Richtigkeit genauso gut wie eine
+    lange. Belohne nie die Länge.
+  - Das Feedback ist auf Deutsch, in einfacher Sprache, und spricht die Person
+    mit „du“ an. Wenn das Urteil nicht `correct` ist, nenne die richtige
+    Antwort. Bei `partial` sage zuerst, was stimmt, und dann, was fehlt.
+  - Erwähne nie Punkte, Noten oder die Bewertungskriterien, und schreibe das
+    Urteil oder ein Etikett wie „Urteil:“ nie ins Feedback. Beginne direkt mit
+    dem Inhalt.
+  - Keine Anlageberatung: Empfiehl nie, Kryptowerte zu kaufen oder zu meiden.
+
+discussion:
+  instructions: |
+    Du darfst die richtige Antwort nennen und erklären. Bleib bei dieser einen
+    Frage und beim Inhalt des Kapitels „Wenn das Versprechen bricht“, halte
+    jede Antwort kurz (höchstens fünf Sätze) und nimm ein konkretes Beispiel
+    aus dem Alltag, wenn es hilft. Antworte auf Deutsch.
+
+questions:
+  - id: terra-crash
+    title: "Warum Terra abstürzte"
+    question: |
+      Erkläre, warum der Stablecoin TerraUSD (UST) im Mai 2022 zusammengebrochen ist.
+    evaluation: |
+      Erwartet: TerraUSD hatte keine echten Dollar-Reserven, sondern war nur
+      über den eigenen, schwankenden Luna-Coin gedeckt. Als große Anlegerinnen
+      und Anleger im Mai 2022 abzogen, fiel der Kurs, es wurden massenhaft
+      neue Luna gedruckt, und eine Todesspirale aus Kursverfall und
+      Vertrauensverlust vernichtete den Wert.
+      Erforderlich: (1) keine echten Reserven, nur Deckung über den Luna-Coin;
+      (2) Auslöser war der Abzug großer Anleger, der eine sich selbst
+      verstärkende Abwärtsspirale (Todesspirale) auslöste.
+      Teilweise: nennt nur, dass Leute ihr Geld abgezogen haben, ohne den
+      Mechanismus (fehlende Reserven, Luna, Todesspirale) zu erklären.
+      Falsch: nennt Hacker, einen Diebstahl oder ein staatliches Verbot als
+      Ursache.
+
+  - id: peg-verlieren
+    title: "Den Peg verlieren"
+    question: |
+      Was bedeutet es, wenn ein Stablecoin „den Peg verliert“? Nenne ein
+      Beispiel aus dem Kapitel.
+    evaluation: |
+      Erwartet: „Den Peg verlieren“ heißt, dass der Coin nicht mehr genau
+      1 Dollar wert ist, sondern darunter gehandelt wird. Beispiel: USDC fiel
+      im März 2023 auf 0,87 Dollar, oder TerraUSD fiel 2022 fast auf null.
+      Erforderlich: (1) Erklärung, dass der Coin von seiner festen Bindung an
+      den Dollar abweicht bzw. weniger als 1 Dollar wert ist; (2) ein
+      passendes Beispiel aus dem Kapitel (USDC 2023 oder TerraUSD 2022).
+      Teilweise: nennt nur ein Beispiel ohne die allgemeine Erklärung, oder
+      erklärt den Begriff richtig, ohne ein Beispiel zu nennen.
+      Falsch: beschreibt einen Kursanstieg über 1 Dollar als das eigentliche
+      Problem oder verwechselt den Begriff mit Zinsen.
+
+  - id: bank-run-stablecoin
+    title: "Bank Run bei einem Stablecoin"
+    question: |
+      Was ist ein Bank Run, und warum kann er auch einen Stablecoin treffen?
+    evaluation: |
+      Erwartet: Ein Bank Run ist, wenn viele Kundinnen und Kunden gleichzeitig
+      ihr Geld zurückwollen und der Herausgeber (eine Bank oder eine
+      Stablecoin-Firma) nicht genug sofort verfügbares Geld hat, um alle
+      auszuzahlen; die Angst verstärkt sich dabei selbst. Ein Stablecoin kann
+      das treffen, weil es keine Einlagensicherung und keine Zentralbank als
+      Retter gibt und weil ein digitaler Run in Stunden statt Tagen abläuft.
+      Erforderlich: (1) der Bank-Run-Mechanismus (viele wollen gleichzeitig
+      ihr Geld zurück, nicht genug ist sofort verfügbar); (2) ein Grund, warum
+      Stablecoins dafür besonders anfällig sind (keine Einlagensicherung,
+      keine Zentralbank als Retter, oder es geht digital sehr schnell).
+      Teilweise: erklärt nur allgemein, was ein Bank Run ist, ohne den Bezug
+      zu Stablecoins; oder nennt nur „keine Einlagensicherung“ ohne den
+      Grundmechanismus des Bank Runs.
+      Falsch: behauptet, ein Bank Run könne einen Stablecoin nicht treffen,
+      weil er keine echte Bank ist.
+
+  - id: usdc-svb
+    title: "USDC und die Silicon Valley Bank"
+    question: |
+      USDC hatte im März 2023 echte Reserven. Warum fiel der Kurs trotzdem?
+    evaluation: |
+      Erwartet: Ein Teil der Reserven (rund 3,3 Milliarden Dollar) lag als
+      Bankguthaben bei der Silicon Valley Bank, die zusammenbrach. Anlegerinnen
+      und Anleger fürchteten, dass Circle nicht mehr an dieses Geld
+      herankommt, und der Kurs fiel, bis die US-Regierung alle Einlagen der
+      SVB absicherte.
+      Erforderlich: (1) ein Teil der Reserven lag bei der Silicon Valley Bank,
+      die zusammenbrach; (2) daraus entstand Angst bzw. Unsicherheit, ob
+      Circle an das Geld kommt, was den Kurs fallen ließ.
+      Teilweise: nennt nur, dass eine Bank zusammengebrochen ist, ohne den
+      Zusammenhang mit den USDC-Reserven zu erklären.
+      Falsch: behauptet, USDC habe in Wirklichkeit keine echten Reserven
+      gehabt, oder verwechselt den Fall mit dem Terra-Crash.
+
+  - id: hohe-zinsen-warnsignal
+    title: "Ein verlockendes Zinsangebot"
+    question: |
+      Ein Freund zeigt dir ein Angebot mit 20 Prozent Zinsen im Jahr auf einen
+      Stablecoin. Warum ist das ein Warnsignal?
+    evaluation: |
+      Erwartet: Normale Stablecoins zahlen keine oder kaum Zinsen, weil der
+      Herausgeber die Erträge aus den Reserven selbst behält. Ein Angebot mit
+      20 Prozent Zinsen erinnert an TerraUSD, das mit einem ähnlichen
+      Versprechen Anlegerinnen und Anleger lockte und 2022 zusammenbrach; so
+      hohe Zinsen lassen sich kaum durch echte, sichere Erträge finanzieren.
+      Erforderlich: (1) normale Stablecoins zahlen keine oder kaum Zinsen, die
+      Erträge behält der Herausgeber; (2) Bezug dazu, dass so hohe Zinsen
+      unrealistisch sind bzw. der Vergleich zu Terra, wo genau das
+      schiefging.
+      Teilweise: sagt nur, das Angebot sei „zu hoch“ oder „unseriös“, ohne den
+      Vergleich zu normalen Stablecoins oder zu Terra zu nennen.
+      Falsch: hält 20 Prozent Zinsen für ein normales, seriöses Angebot bei
+      Stablecoins.

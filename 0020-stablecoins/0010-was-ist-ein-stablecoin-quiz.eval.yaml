@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/evals/eval-yaml.schema.json
+# Golden-answer regression cases for the "Was ist ein Stablecoin?" chapter
+# quiz (0020-stablecoins/0010-was-ist-ein-stablecoin-quiz.yaml). One correct,
+# one partial, one incorrect per question. Teacher-only test data; never
+# publish as an activity. Grading runs on the quiz's own small model (Qwen on
+# SCCH, free); the feedback audit uses a frontier judge via --judge-llm-* and
+# costs money, so run it after rubric changes, not routinely.
+
+id: was-ist-ein-stablecoin-quiz-eval
+target: ./0010-was-ist-ein-stablecoin-quiz.yaml
+
+questions:
+  - question: definition-eigene-worte
+    answers:
+      - expect: correct
+        answer: |
+          ein stablecoin ist digitales geld auf einer blockchain, das immer
+          genau 1 dollar wert sein soll. eine firma gibt ihn raus und hat
+          dafür echtes geld als reserve
+      # Only "stable crypto", no coupling and no issuer mentioned.
+      - expect: partial
+        answer: |
+          das ist einfach eine kryptowährung die nicht so stark schwankt wie
+          bitcoin
+      - expect: incorrect
+        answer: |
+          ein stablecoin ist einfach bitcoin nur mit einem anderen namen
+
+  - question: wert-bei-einem-dollar
+    answers:
+      - expect: correct
+        answer: |
+          für jeden coin liegt bei der firma ein echter dollar oder eine
+          sichere anleihe. man kann den coin jederzeit gegen 1 dollar
+          zurücktauschen, deshalb bleibt er bei 1 dollar
+      # Names the retausch promise but not the reserves behind it.
+      - expect: partial
+        answer: |
+          du kannst ihn immer gegen einen dollar eintauschen bei der firma
+      - expect: incorrect
+        answer: |
+          ein programm rechnet automatisch aus wie viele coins es geben darf
+          und hält dadurch den preis stabil, echte dollar braucht es dafür
+          nicht
+
+  - question: geschaeftsmodell-herausgeber
+    answers:
+      - expect: correct
+        answer: |
+          die firma legt die dollar reserven in staatsanleihen an und
+          kassiert die zinsen selbst, die coin besitzer bekommen keine zinsen
+      # Says issuer keeps the interest, but never says where the interest comes from.
+      - expect: partial
+        answer: |
+          die firma behält einfach die zinsen für sich und gibt uns nichts ab
+      - expect: incorrect
+        answer: |
+          die firma verlangt bei jedem kauf eine gebühr von den kundinnen und
+          davon lebt sie, zinsen spielen keine rolle
+
+  - question: unterschied-bitcoin
+    answers:
+      - expect: correct
+        answer: |
+          bitcoin schwankt stark im kurs und hat keinen herausgeber. ein
+          stablecoin wird von einer firma rausgegeben und soll immer 1 dollar
+          wert bleiben
+      # Only the stable-vs-volatile part, no issuer mentioned.
+      - expect: partial
+        answer: |
+          bitcoin geht rauf und runter, ein stablecoin bleibt stabil
+      - expect: incorrect
+        answer: |
+          eigentlich ist das fast das gleiche, beides ist einfach krypto und
+          schwankt ähnlich stark
+
+  - question: pleite-des-herausgebers
+    answers:
+      - expect: correct
+        answer: |
+          bei stablecoins gibt es keine einlagensicherung, wenn die firma
+          pleitegeht bist du nur eine gläubigerin von vielen und bekommst dein
+          geld vielleicht nicht zurück. bei der bank springt dagegen die
+          einlagensicherung ein bis 100.000 euro
+      # Names the loss but never mentions deposit insurance as the comparison.
+      - expect: partial
+        answer: |
+          dann ist dein geld wahrscheinlich weg, ist ja keine bank
+      - expect: incorrect
+        answer: |
+          das ist genau wie beim girokonto, der staat sichert das genauso ab

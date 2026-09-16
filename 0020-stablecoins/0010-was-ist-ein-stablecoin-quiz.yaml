@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/quizzes/quiz-yaml.schema.json
+# Quiz zum Kapitel „Was ist ein Stablecoin?“ (0020-stablecoins/0010-was-ist-ein-stablecoin.qmd).
+
+id: was-ist-ein-stablecoin-quiz
+name: "Quiz: Was ist ein Stablecoin?"
+title: "Teste dein Wissen: Was ist ein Stablecoin?"
+description: |
+  Fünf kurze Fragen zum Kapitel *Was ist ein Stablecoin?*. Antworte in eigenen
+  Worten. Es gibt keine Antwortmöglichkeiten zum Anklicken, und das Quiz ist
+  anonym: Es ist für dich da, damit du siehst, was du schon verstanden hast
+  und was du noch einmal lesen solltest. Ein bis zwei Sätze reichen meistens.
+
+llm:
+  model: Qwen/Qwen3.8-27B-FP8
+  provider: SCCH
+
+# Shared context for BOTH the grader and the discussion chat. Identical in
+# every quiz of this book (keep it so: edit all three when you change it).
+instructions: |
+  Die Schülerinnen und Schüler sind 14 bis 18 Jahre alt und besuchen den
+  Wirtschaftskundeunterricht einer österreichischen Schule. Sie haben das
+  Kapitel „Was ist ein Stablecoin?“ eines kurzen Buchs über Stablecoins
+  gelesen. Sie kennen die drei Funktionen des Geldes, den Unterschied
+  zwischen Bargeld und Bankguthaben, Inflation und Wechselkurse.
+  Blockchain-Technik kennen sie nicht und müssen sie nicht erklären.
+
+  Bewertung. Die Kriterien jeder Frage nennen die erwartete Antwort und die
+  Aspekte, die die Antwort enthalten muss. Prüfe die inhaltliche Richtigkeit:
+  - `correct`: Jeder erforderliche Aspekt ist vorhanden, und nichts in der
+    Antwort ist falsch.
+  - `partial`: Ein Teil der erforderlichen Aspekte ist vorhanden, oder die
+    Antwort ist im Kern richtig, enthält aber einen falschen Punkt.
+  - `incorrect`: Kein erforderlicher Aspekt ist vorhanden, oder die Kernaussage
+    ist falsch.
+  Wenn du zwischen zwei Urteilen schwankst, nimm das niedrigere.
+
+  - Die Schülerinnen und Schüler antworten in eigenen Worten und oft
+    umgangssprachlich. Alltagsformulierungen zählen, wenn die Idee stimmt;
+    verlange keinen Fachbegriff, den die Kriterien nicht nennen.
+  - Rechtschreibung und Grammatik zählen nie.
+  - Eine kurze Antwort ist bei gleicher Richtigkeit genauso gut wie eine
+    lange. Belohne nie die Länge.
+  - Das Feedback ist auf Deutsch, in einfacher Sprache, und spricht die Person
+    mit „du“ an. Wenn das Urteil nicht `correct` ist, nenne die richtige
+    Antwort. Bei `partial` sage zuerst, was stimmt, und dann, was fehlt.
+  - Erwähne nie Punkte, Noten oder die Bewertungskriterien, und schreibe das
+    Urteil oder ein Etikett wie „Urteil:“ nie ins Feedback. Beginne direkt mit
+    dem Inhalt.
+  - Keine Anlageberatung: Empfiehl nie, Kryptowerte zu kaufen oder zu meiden.
+
+discussion:
+  instructions: |
+    Du darfst die richtige Antwort nennen und erklären. Bleib bei dieser einen
+    Frage und beim Inhalt des Kapitels „Was ist ein Stablecoin?“, halte jede
+    Antwort kurz (höchstens fünf Sätze) und nimm ein konkretes Beispiel aus
+    dem Alltag, wenn es hilft. Antworte auf Deutsch.
+
+questions:
+  - id: definition-eigene-worte
+    title: "Ein Stablecoin in eigenen Worten"
+    question: |
+      Erkläre in eigenen Worten, was ein Stablecoin ist.
+    evaluation: |
+      Erwartet: Ein Stablecoin ist digitales Geld auf einer Blockchain, dessen
+      Wert an eine staatliche Währung wie den Dollar oder Euro gekoppelt ist,
+      und der von einer Firma herausgegeben wird, die dafür Reserven hält.
+      Erforderlich: (1) der Wert ist an eine Währung wie den Dollar gebunden
+      (1 Coin = 1 Dollar zählt); (2) eine Firma gibt ihn heraus und hält
+      Reserven dafür.
+      Teilweise: nennt nur „stabile Kryptowährung“ oder „Kryptowährung, die
+      nicht schwankt“, ohne Kopplung oder Herausgeber zu erwähnen.
+      Falsch: verwechselt den Stablecoin mit Bitcoin oder mit staatlichem
+      Geld wie dem digitalen Euro.
+
+  - id: wert-bei-einem-dollar
+    title: "Wie der Wert bei 1 Dollar bleibt"
+    question: |
+      Wie hält ein reservegedeckter (fiat-gedeckter) Stablecoin seinen Wert
+      bei genau 1 Dollar?
+    evaluation: |
+      Erwartet: Für jeden ausgegebenen Coin liegt 1 Dollar in Bargeld oder
+      sicheren Staatsanleihen beim Herausgeber, und jeder kann den Coin dort
+      jederzeit gegen 1 Dollar zurücktauschen. Dieses Rücktauschversprechen
+      hält den Kurs bei 1 Dollar.
+      Erforderlich: (1) für jeden Coin liegt echtes Geld oder eine sichere
+      Anlage als Reserve bereit; (2) der Coin lässt sich jederzeit 1:1 gegen
+      Dollar zurücktauschen.
+      Teilweise: nennt nur eine der beiden Aspekte, zum Beispiel „es gibt
+      Reserven“ ohne den Rücktausch, oder „man kann ihn zurücktauschen“ ohne
+      die Reserven zu erwähnen.
+      Falsch: sagt, der Kurs werde von einem Computerprogramm oder durch
+      Angebot und Nachfrage allein stabil gehalten, ohne echte Reserven.
+
+  - id: geschaeftsmodell-herausgeber
+    title: "Wie der Herausgeber Geld verdient"
+    question: |
+      Der Herausgeber eines Stablecoins zahlt dir keine Zinsen. Wie verdient
+      er trotzdem Geld?
+    evaluation: |
+      Erwartet: Der Herausgeber legt die Dollar, die er als Reserve hält,
+      selbst in verzinsten Staatsanleihen an. Diese Zinsen behält er
+      vollständig für sich, während die Besitzerinnen und Besitzer der Coins
+      in der Regel keine Zinsen bekommen.
+      Erforderlich: (1) die Reserven werden in verzinste Anlagen wie
+      Staatsanleihen investiert; (2) der Herausgeber behält die Zinsen selbst,
+      die Coin-Besitzer bekommen keine.
+      Teilweise: nennt nur, dass der Herausgeber die Zinsen behält, ohne zu
+      sagen, woher die Zinsen überhaupt kommen (Staatsanleihen oder Anlage
+      der Reserven).
+      Falsch: sagt, der Herausgeber verlange Gebühren oder Zinsen direkt von
+      den Coin-Besitzern, oder dass es kein Geschäftsmodell gebe.
+
+  - id: unterschied-bitcoin
+    title: "Stablecoin gegen Bitcoin"
+    question: |
+      Was unterscheidet einen Stablecoin von Bitcoin?
+    evaluation: |
+      Erwartet: Bitcoin hat keinen Herausgeber und schwankt stark im Kurs. Ein
+      Stablecoin wird von einer Firma herausgegeben, die Reserven hält, und
+      sein Wert ist absichtlich an eine Währung wie den Dollar gekoppelt,
+      damit er stabil bleibt.
+      Erforderlich: (1) Bitcoin schwankt im Wert, der Stablecoin soll stabil
+      bleiben; (2) ein Stablecoin hat eine Firma als Herausgeber, Bitcoin
+      nicht.
+      Teilweise: nennt nur den Unterschied im Kurs (stabil gegen schwankend),
+      ohne den Herausgeber zu erwähnen, oder umgekehrt.
+      Falsch: sagt, beide seien im Grunde dasselbe, oder dass Bitcoin stabiler
+      sei als ein Stablecoin.
+
+  - id: pleite-des-herausgebers
+    title: "Wenn der Herausgeber pleitegeht"
+    question: |
+      Was passiert mit deinem Geld, wenn der Herausgeber eines Stablecoins
+      pleitegeht? Vergleiche kurz mit einem Bankkonto.
+    evaluation: |
+      Erwartet: Für Stablecoins gibt es keine Einlagensicherung. Geht der
+      Herausgeber pleite, bist du nur eine Gläubigerin oder ein Gläubiger
+      unter vielen und
+      bekommst dein Geld vielleicht gar nicht oder nur teilweise zurück. Bei
+      einem Bankkonto zahlt dagegen die staatliche Einlagensicherung (in der
+      EU bis 100.000 Euro).
+      Erforderlich: (1) für Stablecoins gibt es keine Einlagensicherung, das
+      Geld kann verloren sein; (2) bei einem Bankkonto springt die staatliche
+      Einlagensicherung ein.
+      Teilweise: nennt nur, dass beim Stablecoin Geld verloren gehen kann,
+      ohne die Einlagensicherung beim Bankkonto als Vergleich zu nennen.
+      Falsch: sagt, Stablecoins seien genauso abgesichert wie ein Bankkonto,
+      oder dass der Staat für den Herausgeber einspringt.

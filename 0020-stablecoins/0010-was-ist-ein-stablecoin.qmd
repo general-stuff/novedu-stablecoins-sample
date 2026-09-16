@@ -1,0 +1,109 @@
+---
+title: "Was ist ein Stablecoin?"
+---
+
+Ein Freund in Buenos Aires bekommt sein Gehalt in Pesos. Noch am selben Tag
+tauscht er es in digitale Dollar. Er verliert dabei keine Zeit und geht nicht
+zur Bank, ein paar Klicks in einer App reichen. Der Peso verliert laufend an
+Wert, ein digitaler Dollar tut das nicht. Was er in der Hand hält, ist ein
+**Stablecoin**: digitales Geld auf einer Blockchain, dessen Wert absichtlich
+an eine staatliche Währung gebunden ist, meistens an den US-Dollar. Ein
+Stablecoin soll immer genau 1 Dollar wert sein.
+
+Frag den Tutor, was ein Stablecoin mit einem Gutschein zu tun hat, oder lass
+dir an einem Beispiel zeigen, worin sich die drei Bauarten aus diesem Kapitel
+unterscheiden.
+
+{{< tutor stablecoin-tutor >}}
+
+## Das Problem, das Stablecoins lösen {#sec-was-ist-ein-stablecoin-problem}
+
+Bitcoin und andere Kryptowährungen schwanken stark im Wert. Wer damit zahlt
+oder spart, weiß nicht, was das Geld morgen wert ist. Ein Stablecoin
+verbindet zwei Welten, die sonst getrennt bleiben: die Technik der
+Kryptowelt, mit der du rund um die Uhr in Sekunden bis Minuten Geld
+verschickst, ohne Bank und nur mit Internet und einer Wallet-App, und die
+Stabilität des staatlichen Geldes, bei dem 1 Coin immer 1 Dollar wert ist.
+
+Ein Stablecoin ist wie ein **digitaler Gutschein**, der sich jederzeit gegen
+genau einen Dollar einlösen lässt. Der Herausgeber des Gutscheins verspricht,
+dass das Geld dafür in seiner Kasse liegt.
+
+::: {.callout-note}
+## Stimmt das? „Stablecoins sind wie Bitcoin“
+
+Nicht ganz. Bitcoin schwankt stark im Kurs und hat keinen Herausgeber,
+niemand steht dafür gerade. Ein Stablecoin ist an den Dollar gebunden und
+wird von einer Firma ausgegeben, die Reserven dafür hält. Gemeinsam ist den
+beiden nur die Blockchain-Technik darunter.
+:::
+
+## Drei Bauarten {#sec-was-ist-ein-stablecoin-bauarten}
+
+Ein Stablecoin hält seinen Wert nicht von selbst. Er braucht einen
+Mechanismus, der ihn bei 1 Dollar hält, und dafür gibt es drei Bauarten.
+
+| Bauart | Wie sie funktioniert | Beispiel | Bewertung |
+|---|---|---|---|
+| Fiat-gedeckt (mit Reserven) | Der Herausgeber hält für jeden Coin echtes Geld oder sehr sichere Wertpapiere, vor allem kurzlaufende US-Staatsanleihen, als Reserve. Du kannst den Coin jederzeit beim Herausgeber gegen 1 Dollar zurücktauschen. | Tether (USDT), USD Coin (USDC), PayPal USD (PYUSD) | Marktstandard, rund 98 Prozent des Marktes. |
+| Krypto-gedeckt | Andere Kryptowährungen dienen als Sicherheit und werden im Übermaß hinterlegt, zum Beispiel 150 Dollar in Ether für 100 Dollar Stablecoin. | DAI | Nische. |
+| Algorithmisch | Keine echten Reserven. Ein Computerprogramm versucht, Angebot und Nachfrage über einen zweiten Token zu steuern. | TerraUSD, im Mai 2022 zusammengebrochen | Gescheitert. Das nächste Kapitel erzählt, was dabei passiert ist. |
+
+Fast der gesamte Markt setzt auf die erste Bauart. Ein fiat-gedeckter
+Stablecoin funktioniert, solange die Reserven wirklich vorhanden und im
+Ernstfall schnell verfügbar sind.
+
+## Wer verdient daran? {#sec-was-ist-ein-stablecoin-geschaeftsmodell}
+
+Ein Herausgeber nimmt von dir 1 Dollar, gibt dir dafür 1 Coin und legt den
+Dollar in Staatsanleihen an. Die Zinsen darauf behält der Herausgeber, du
+bekommst in der Regel keine. In den USA ist es Herausgebern seit dem
+GENIUS Act sogar verboten, Zinsen an Coin-Besitzer zu zahlen.
+
+Das Geschäftsmodell ist damit einfach. Wie viel dabei herauskommt, hängt an
+der Höhe der Reserven und am Zinssatz, nicht an der Zahl der Beschäftigten.
+Tether, der größte Herausgeber, meldete für 2025 einen Gewinn von rund 10
+Milliarden Dollar bei nur wenigen hundert Mitarbeitenden (Stand 2026).
+
+## Bargeld, Bankguthaben, Bitcoin oder Stablecoin? {#sec-was-ist-ein-stablecoin-vergleich}
+
+Vier Geldformen sehen auf den ersten Blick ähnlich aus, weil du mit allen
+zahlen kannst. Wie sie entstehen und wem du dabei vertraust, unterscheidet
+sich aber stark.
+
+| | Bargeld (Euro-Schein) | Bankguthaben (Girokonto) | Bitcoin | Dollar-Stablecoin |
+|---|---|---|---|---|
+| Wer gibt es heraus? | Zentralbank (EZB) | Geschäftsbank | niemand, ein Netzwerk | private Firma, zum Beispiel Tether oder Circle |
+| Wert stabil? | ja, bis auf Inflation | ja | nein, stark schwankend | ja, solange die Reserven halten |
+| Woher kommt das Vertrauen? | Staat, Zentralbank | Bank, staatliche Einlagensicherung (in der EU bis 100.000 Euro) | Mathematik, Knappheit | Versprechen des Herausgebers, Reserven, Regulierung |
+| Wenn der Herausgeber pleitegeht? | entfällt | Einlagensicherung zahlt | entfällt | keine Einlagensicherung, du bist Gläubiger einer Firma |
+| Weltweit in Sekunden übertragbar? | nein | nur über Banken, oft Tage, mit Gebühren | ja | ja |
+| Zinsen für dich? | nein | manchmal | nein | in der Regel nein |
+
+Ein Bankguthaben und ein Dollar-Stablecoin sehen sich in einer App fast
+gleich, aber nur eines davon fängt eine Pleite mit einer staatlichen
+Garantie auf.
+
+## Der Markt in Zahlen {#sec-was-ist-ein-stablecoin-markt}
+
+Alle Zahlen in diesem Abschnitt sind gerundet und beschreiben den Stand 2026.
+
+Der Gesamtmarkt aller Stablecoins liegt bei rund 300 Milliarden Dollar. Fast
+alles davon ist Dollar, rund 98 Prozent aller Stablecoins sind an den US-
+Dollar gebunden. Zwei Firmen teilen sich den größten Teil unter sich auf:
+Tether (USDT) hält rund 59 Prozent des Marktes, Circle (USDC) rund 23 Prozent.
+Euro-Stablecoins spielen dagegen kaum eine Rolle, zusammen kommen sie auf
+weniger als ein halbes Prozent des Marktes.
+
+Rund 300 Milliarden Dollar sind ungefähr so viel wie das Bruttoinlandsprodukt
+von Finnland oder Tschechien. Gemessen am weltweiten Zahlungsverkehr ist das
+trotzdem wenig: Erst rund 1 Prozent aller Zahlungen weltweit läuft über
+Stablecoins. Der Alltagseinsatz steht am Anfang.
+
+## Teste dein Wissen {#sec-was-ist-ein-stablecoin-quiz}
+
+Fünf kurze Fragen zum Kapitel: was ein Stablecoin ist, wie er seinen Wert
+hält, wie der Herausgeber daran verdient, was ihn von Bitcoin unterscheidet,
+und was mit deinem Geld passiert, wenn der Herausgeber pleitegeht.
+
+{{< quiz was-ist-ein-stablecoin title="Was ist ein Stablecoin?" >}}

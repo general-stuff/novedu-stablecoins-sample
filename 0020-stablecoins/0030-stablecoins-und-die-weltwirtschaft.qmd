@@ -1,0 +1,193 @@
+---
+title: "Stablecoins und die Weltwirtschaft"
+---
+
+Wer in Buenos Aires oder Lagos sein Gehalt in digitale Dollar tauscht, denkt
+dabei nicht an Washington. Trotzdem landet ein Teil dieses Geldes dort: Die
+Firma, die den Coin ausgibt, legt den eingezahlten Dollar in amerikanischen
+Staatsanleihen an. Kapitel 1 und 2 haben erklärt, wie ein Stablecoin
+funktioniert und wie er scheitern kann. Dieses Kapitel verfolgt, wozu Menschen
+und Firmen Stablecoins heute nutzen, warum die USA sie fördern und wie Europa
+darauf reagiert.
+
+Frag den Tutor zum Beispiel, warum US-Staatsanleihen in dieser Geschichte
+überhaupt vorkommen oder was der Unterschied zwischen einem Euro-Stablecoin
+und dem digitalen Euro ist.
+
+{{< tutor stablecoin-tutor >}}
+
+## Wofür Stablecoins heute genutzt werden {#sec-stablecoins-und-die-weltwirtschaft-nutzung}
+
+Der größte Nutzungszweck ist unspektakulär: Stablecoins sind das Parkgeld auf
+Kryptobörsen. Wer Bitcoin verkauft, hält den Erlös als Stablecoin, statt ihn
+aufs Bankkonto zurückzuholen. Das allein macht sie schon zum meistgenutzten
+digitalen Geld der Kryptowelt.
+
+Der zweite Zweck betrifft Menschen, nicht Kryptohändler. In Ländern mit hoher
+Inflation, etwa Argentinien, der Türkei, Nigeria oder Venezuela, tauschen
+Menschen ihr Gehalt in Dollar-Stablecoins, weil ihre Landeswährung schnell an
+Wert verliert und ein echtes Dollarkonto oft nicht zugänglich oder verboten
+ist. Das nennt man digitale Dollarisierung: Der Dollar übernimmt die Rolle des
+Ersparten, nur eben als App statt als Konto bei einer US-Bank.
+
+Der dritte Zweck sind Geldtransfers ins Ausland. Wer im Ausland arbeitet und
+Geld nach Hause schickt, zahlt dafür klassischerweise viel: Der weltweite
+Schnitt liegt bei rund 6 Prozent der Summe, nach Afrika südlich der Sahara bei
+rund 9 Prozent, und die Überweisung dauert oft Tage. Mit Stablecoins geht der
+Transfer in Minuten und kostet oft nur Cent-Beträge. Teuer bleibt meist nur der
+letzte Schritt, der Umtausch in lokales Bargeld.
+
+Dazu kommen Zahlungen zwischen Unternehmen: Freelancer, Online-Händler und
+Importeure in Ländern mit schwachem Bankensystem lassen sich direkt in
+Stablecoins bezahlen. Seit 2025 wird auch ein weiterer Zweck sichtbar, der
+reiche Länder betrifft. Visa und Mastercard wickeln Zahlungen in USDC ab,
+PayPal hat mit PYUSD einen eigenen Coin, und Stripe bietet Händlern
+Stablecoin-Zahlungen an. Für Konsumentinnen und Konsumenten in Österreich ist
+davon noch kaum etwas zu spüren.
+
+### Fallbeispiel Nigeria {#sec-stablecoins-und-die-weltwirtschaft-nigeria}
+
+Nigeria ist der größte Stablecoin-Markt Afrikas. Rund 26 Millionen Menschen
+nutzen dort Stablecoins, ungefähr jede achte Person im Land, mit rund 22
+Milliarden Dollar an Transaktionen in einem einzigen Jahr (Stand 2024). Die
+Gründe: eine Landeswährung, die stark an Wert verliert, strenge Beschränkungen
+beim Zugang zu echten Dollar, viele Menschen im Ausland, die Geld
+heimschicken, und viele junge Leute mit einem Smartphone. Der Internationale
+Währungsfonds (IWF) sieht darin einen wachsenden Kanal für
+grenzüberschreitende Zahlungen, warnt aber zugleich vor Kapitalflucht und
+davor, dass die Zentralbank die Kontrolle über die eigene Währung verliert,
+wenn zu viel Geld in Dollar-Coins abwandert.
+
+### Fallbeispiel Argentinien {#sec-stablecoins-und-die-weltwirtschaft-argentinien}
+
+Argentinien kennt seit Jahrzehnten hohe Inflation, in manchen Jahren über 100
+Prozent im Jahr. Der Peso verliert laufend an Wert, und der Kauf von echten
+Dollar war lange stark beschränkt. Viele Argentinierinnen und Argentinier
+nutzen deshalb Apps, mit denen sie Pesos sofort in USDT oder USDC tauschen;
+Freelancer lassen sich direkt in Stablecoins bezahlen. Im Grunde ist das nur
+die moderne Form eines alten Verhaltens: Schon lange vor Kryptowährungen haben
+Menschen dort Dollar-Scheine unter der Matratze gehortet, weil sie dem eigenen
+Geld nicht trauten. Der Stablecoin macht dieselbe Sache jetzt mit dem Handy.
+
+## Stablecoins und der Dollar {#sec-stablecoins-und-die-weltwirtschaft-dollar}
+
+Jeder Dollar, den ein Herausgeber als Reserve für seine Coins hält, landet
+meistens in kurzlaufenden US-Staatsanleihen. Tether allein hielt Ende 2025
+rund 141 Milliarden Dollar davon und gehörte damit zu den 20 größten
+Gläubigern der USA weltweit, vor vielen Staaten. Tether und Circle zusammen
+halten laut IWF mehr US-Staatsanleihen als Saudi-Arabien (Stand 2025). Zwei
+private Firmen leihen dem US-Staat also mehr Geld als ein ganzes Land mit
+Ölreserven.
+
+Das ist kein Zufall, sondern amerikanische Politik. Der GENIUS Act, im Juli
+2025 unterzeichnet, regelt Dollar-Stablecoins in den USA. Nur zugelassene
+Herausgeber dürfen sie ausgeben, für jeden Coin muss ein Dollar an sicheren
+Reserven vorhanden sein, die Reserven werden monatlich offengelegt, und
+Herausgeber dürfen den Coin-Besitzern keine Zinsen zahlen. Eine staatliche
+Einlagensicherung gibt es auch unter diesem Gesetz nicht. Hinter dem Gesetz
+steht ein klares Motiv: Die US-Regierung sieht Stablecoins als Mittel, die
+weltweite Rolle des Dollars zu stärken und neue Käufer für die eigenen
+Staatsanleihen zu gewinnen. Jedes Mal,
+wenn irgendwo auf der Welt jemand einen Dollar-Stablecoin kauft, kauft im
+Hintergrund auch jemand eine amerikanische Staatsanleihe.
+
+## Europas Antwort {#sec-stablecoins-und-die-weltwirtschaft-europa}
+
+Die EU regelt Stablecoins seit 2024 über die Verordnung MiCA. Ein Herausgeber
+braucht dafür eine Lizenz als E-Geld-Institut oder als Bank, muss seine
+Reserven 1:1 halten, davon einen großen Teil als Bankeinlagen in der EU, und
+darf keine Zinsen zahlen. In Österreich ist dafür die Finanzmarktaufsicht
+(FMA) zuständig. Die Folge: USDC ist in der EU zugelassen, USDT nicht, weil
+Tether die MiCA-Regeln bisher nicht erfüllt.
+
+Europa arbeitet an zwei eigenen Antworten. Die erste kommt von den Banken:
+37 europäische Banken, darunter die Raiffeisen Bank International, haben das
+Gemeinschaftsunternehmen Qivalis gegründet, um einen MiCA-konformen
+Euro-Stablecoin herauszugeben. Stand September 2026 wartet Qivalis noch auf
+die Lizenz der niederländischen Zentralbank. Ziel ist ein europäisches
+Gegengewicht zu USDT und USDC, damit Zahlungen in Europa nicht über
+Dollar-Coins amerikanischer Firmen laufen.
+
+Die zweite Antwort kommt von der EZB selbst, mit dem digitalen Euro. Er wäre
+Zentralbankgeld wie ein Geldschein, von der EZB herausgegeben, für alle
+Bürgerinnen und Bürger, mit gratis Grundfunktionen und auch offline nutzbar.
+Damit er nicht massenhaft Geld von den Bankkonten abzieht, ist eine Obergrenze
+pro Person im Gespräch, rund 3.000 Euro. Ein Pilotbetrieb mit
+Zahlungsdienstleistern soll 2027 starten, eine echte Einführung kommt
+frühestens 2029. Der entscheidende Unterschied zu jedem Stablecoin: Der
+digitale Euro kann seinen Peg nicht verlieren, weil er nicht an den Euro
+gekoppelt ist, sondern selbst der Euro ist.
+
+Die EZB-Präsidentin Christine Lagarde macht aus ihrer Sorge kein Geheimnis.
+Zahlen Europäerinnen und Europäer im Alltag mit Dollar-Coins von Tether und
+Circle, verliert die EZB Einfluss auf Geldmenge und Zinsen, und Europa wird
+von amerikanischen Firmen und amerikanischem Recht abhängiger. Wandert dazu
+Geld von Bankkonten in Stablecoins ab, haben Banken weniger Einlagen und
+können weniger Kredite vergeben. Und gerät ein großer Herausgeber in einer
+Krise in Not, muss er seine Staatsanleihen schnell verkaufen, was den
+gesamten Anleihemarkt mitreißen kann. Lagarde nennt das Risiko beim Namen:
+digitale Dollarisierung Europas.
+
+## Drei mögliche Zukünfte {#sec-stablecoins-und-die-weltwirtschaft-szenarien}
+
+Die Bank für Internationalen Zahlungsausgleich (BIZ) skizziert drei Szenarien
+dafür, wie es weitergehen könnte. Im ersten bleiben Stablecoins eine Nische
+der Kryptowelt, und für die Weltwirtschaft ändert sich wenig. Im zweiten
+breiten sich Dollar-Stablecoins in Schwellenländern und vielleicht auch in
+Europa als Alltagsgeld aus, nationale Währungen verlieren an Bedeutung, und
+die Macht des Dollars wächst weiter. Im dritten regulieren Staaten
+Stablecoins streng oder bringen eigene digitale Währungen an den Start, sodass
+schnelle, billige Zahlungen möglich werden, ohne dass ein Land die Kontrolle
+über sein eigenes Geld verliert. Welches Szenario eintrifft, hängt von der
+Regulierung, vom Verhalten der Nutzerinnen und Nutzer und davon ab, ob
+staatliche Alternativen wie der digitale Euro rechtzeitig kommen.
+
+Die Argumente auf beiden Seiten lassen sich kurz gegenüberstellen:
+
+| Dafür | Dagegen |
+|---|---|
+| Billigere, schnellere Zahlungen weltweit, vor allem für arme Länder und Migrantinnen und Migranten | Bank-Run-Risiko: keine Einlagensicherung, keine Zentralbank als Retter |
+| Zugang zu stabilem Geld für Menschen ohne Bankkonto, aber mit Smartphone | Ansteckung: Notverkäufe von Staatsanleihen können den ganzen Anleihemarkt treffen |
+| Schutz der Ersparnisse in Ländern mit sehr hoher Inflation | Verlust der Währungssouveränität, Kapitalflucht aus verwundbaren Ländern |
+| Wettbewerb zwingt Banken und Zahlungsdienste, billiger zu werden | Machtkonzentration: zwei private Firmen kontrollieren über 80 Prozent des Marktes |
+| Aus US-Sicht: neue Nachfrage nach Staatsanleihen, stärkerer Dollar | Schwächung der Banken, wenn Einlagen in Stablecoins abwandern |
+
+## Ausblick {#sec-stablecoins-und-die-weltwirtschaft-ausblick}
+
+Am 1. September 2026 kündigten 21 Großbanken, darunter Citi, Goldman Sachs und
+Bank of America, einen gemeinsamen Dollar-Stablecoin für die erste
+Jahreshälfte 2027 an, mit einer Euro-Version für später. Mastercard hat im
+März 2026 den Stablecoin-Dienstleister BVNK gekauft und baut damit weiter aus,
+was Visa mit USDC bereits macht. Ob dabei ein ernsthafter Euro-Stablecoin
+entsteht und ob der digitale Euro 2029 wirklich kommt, weiß heute niemand. Und
+niemand weiß, was beim nächsten großen Crash passiert, wenn der Markt statt
+rund 300 Milliarden Dollar eine Billion groß ist.
+
+## Teste dein Wissen {#sec-stablecoins-und-die-weltwirtschaft-quiz}
+
+Fünf kurze Fragen zu Nutzung, Dollar-Dominanz, Regulierung und den Chancen und
+Risiken für die Weltwirtschaft.
+
+{{< quiz stablecoins-und-die-weltwirtschaft title="Stablecoins und die Weltwirtschaft" >}}
+
+## Transfer: dein Kommentar {#sec-kommentar}
+
+Jetzt bist du dran mit einer eigenen Position. Schreib einen Kommentar für die
+Schülerzeitung, 250 bis 350 Wörter, zu der Frage: „Sollen wir in Europa in
+Zukunft mit Dollar-Stablecoins bezahlen, mit einem Euro-Stablecoin der Banken
+oder mit dem digitalen Euro der EZB?“ Beziehe klar Position, bring mindestens
+zwei Argumente dafür, und nimm ein Gegenargument ernst, das du dann entkräftest.
+
+Der Link am Ende dieses Kapitels öffnet die Schreibaufgabe auf Novedu. Dort
+siehst du zwei Spalten: Links schreibst du deinen Text, rechts sitzt ein
+KI-Coach, der mitliest und dir Fragen zu deinem Entwurf stellt. Der Coach kann
+nicht in deinen Text hineinschreiben, jedes Wort bleibt deins. Schreib ein
+paar Sätze und frag den Coach, was noch unklar ist. Wenn der Kommentar sagt,
+was du sagen willst, drückst du auf Speichern.
+
+Diese Aufgabe ist nicht anonym: Deine Lehrkraft liest die gespeicherten Texte
+mit deinem Namen darauf. Es gibt hier keine Note und keine Punkte, dein
+Kommentar dient dazu, dass deine Lehrkraft sieht, wie du über das Thema
+denkst, und im Unterricht darauf eingehen kann.
+
+{{< writing kommentar title="Dein Kommentar für die Schülerzeitung" >}}

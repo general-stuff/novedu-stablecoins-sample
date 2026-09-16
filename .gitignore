@@ -1,0 +1,12 @@
+# Quarto build output
+/_output/
+/.quarto/
+
+# Per-document intermediates Quarto writes next to a .qmd during PDF rendering
+*_files/
+
+# Auxiliary LaTeX files Quarto may leave behind on failed PDF renders
+*.aux
+*.log
+*.out
+*.toc

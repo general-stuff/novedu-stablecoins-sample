@@ -1,0 +1,154 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/quizzes/quiz-yaml.schema.json
+# Quiz zum Kapitel „Stablecoins und die Weltwirtschaft“
+# (0020-stablecoins/0030-stablecoins-und-die-weltwirtschaft.qmd).
+
+id: stablecoins-und-die-weltwirtschaft-quiz
+name: "Quiz: Stablecoins und die Weltwirtschaft"
+title: "Teste dein Wissen: Stablecoins und die Weltwirtschaft"
+description: |
+  Fünf kurze Fragen zum Kapitel *Stablecoins und die Weltwirtschaft*.
+  Antworte in eigenen Worten. Es gibt keine Antwortmöglichkeiten zum
+  Anklicken, und das Quiz ist anonym: Es ist für dich da, damit du siehst,
+  was du schon verstanden hast und was du noch einmal lesen solltest. Ein
+  bis zwei Sätze reichen meistens.
+
+llm:
+  model: Qwen/Qwen3.8-27B-FP8
+  provider: SCCH
+
+# Shared context for BOTH the grader and the discussion chat. Identical in
+# every quiz of this book (keep it so: edit all three when you change it).
+instructions: |
+  Die Schülerinnen und Schüler sind 14 bis 18 Jahre alt und besuchen den
+  Wirtschaftskundeunterricht einer österreichischen Schule. Sie haben das
+  Kapitel „Stablecoins und die Weltwirtschaft“ eines kurzen Buchs über
+  Stablecoins gelesen. Sie kennen die drei Funktionen des Geldes, den
+  Unterschied zwischen Bargeld und Bankguthaben, Inflation und Wechselkurse.
+  Blockchain-Technik kennen sie nicht und müssen sie nicht erklären.
+
+  Bewertung. Die Kriterien jeder Frage nennen die erwartete Antwort und die
+  Aspekte, die die Antwort enthalten muss. Prüfe die inhaltliche Richtigkeit:
+  - `correct`: Jeder erforderliche Aspekt ist vorhanden, und nichts in der
+    Antwort ist falsch.
+  - `partial`: Ein Teil der erforderlichen Aspekte ist vorhanden, oder die
+    Antwort ist im Kern richtig, enthält aber einen falschen Punkt.
+  - `incorrect`: Kein erforderlicher Aspekt ist vorhanden, oder die Kernaussage
+    ist falsch.
+  Wenn du zwischen zwei Urteilen schwankst, nimm das niedrigere.
+
+  - Die Schülerinnen und Schüler antworten in eigenen Worten und oft
+    umgangssprachlich. Alltagsformulierungen zählen, wenn die Idee stimmt;
+    verlange keinen Fachbegriff, den die Kriterien nicht nennen.
+  - Rechtschreibung und Grammatik zählen nie.
+  - Eine kurze Antwort ist bei gleicher Richtigkeit genauso gut wie eine
+    lange. Belohne nie die Länge.
+  - Das Feedback ist auf Deutsch, in einfacher Sprache, und spricht die Person
+    mit „du“ an. Wenn das Urteil nicht `correct` ist, nenne die richtige
+    Antwort. Bei `partial` sage zuerst, was stimmt, und dann, was fehlt.
+  - Erwähne nie Punkte, Noten oder die Bewertungskriterien, und schreibe das
+    Urteil oder ein Etikett wie „Urteil:“ nie ins Feedback. Beginne direkt mit
+    dem Inhalt.
+  - Keine Anlageberatung: Empfiehl nie, Kryptowerte zu kaufen oder zu meiden.
+
+discussion:
+  instructions: |
+    Du darfst die richtige Antwort nennen und erklären. Bleib bei dieser einen
+    Frage und beim Inhalt des Kapitels „Stablecoins und die Weltwirtschaft“,
+    halte jede Antwort kurz (höchstens fünf Sätze) und nimm ein konkretes
+    Beispiel aus dem Alltag, wenn es hilft. Antworte auf Deutsch.
+
+questions:
+  - id: nigeria-argentinien-gruende
+    title: "Warum digitale Dollar?"
+    question: |
+      Nenne zwei Gründe, warum viele Menschen in Nigeria oder Argentinien
+      Dollar-Stablecoins nutzen.
+    evaluation: |
+      Erwartet: Schutz vor der Inflation der eigenen Währung und
+      eingeschränkter Zugang zu echten Dollar sind die Hauptgründe; dazu
+      kommen billige, schnelle Geldtransfers aus dem Ausland und Bezahlung
+      als Freelancer in Stablecoins.
+      Erforderlich: zwei unterschiedliche, richtige Gründe aus dieser Liste,
+      auch in eigenen Worten formuliert (zum Beispiel „die eigene Währung
+      wird immer weniger wert“ oder „man kommt schwer an echte Dollar“).
+      Teilweise: nur ein richtiger Grund genannt, oder zwei Gründe, die im
+      Kern dasselbe sagen.
+      Falsch: nennt nur, dass Kryptowährungen allgemein beliebt sind, ohne
+      Bezug zu Inflation, Dollarzugang oder Geldtransfers.
+
+  - id: staatsanleihen-usa
+    title: "Reserven und Staatsanleihen"
+    question: |
+      Warum kaufen Firmen wie Tether oder Circle so viele US-Staatsanleihen,
+      und was bedeutet das für die USA?
+    evaluation: |
+      Erwartet: Die Reserven hinter den Coins werden in sichere, verzinste
+      US-Staatsanleihen angelegt, die Zinsen sind der Gewinn der Firma; die
+      USA bekommen dadurch neue, große Käufer für ihre Staatsanleihen, was
+      den Dollar stärkt und dem Staat die Finanzierung erleichtert.
+      Erforderlich: (1) die Reserven stecken in US-Staatsanleihen, weil das
+      sicher ist und Zinsen bringt; (2) das verschafft den USA neue
+      Kreditgeber oder stärkt den Dollar.
+      Teilweise: nennt nur einen der beiden Punkte, zum Beispiel nur „die
+      verdienen Zinsen damit“ ohne die Bedeutung für die USA.
+      Falsch: sagt, die Firmen kaufen Staatsanleihen aus reiner Sicherheit
+      ohne Bezug zu Zinsen oder Reserven, oder verwechselt Staatsanleihen mit
+      Aktien.
+
+  - id: digitaler-euro-vs-stablecoin
+    title: "Digitaler Euro oder Stablecoin?"
+    question: |
+      Was unterscheidet den geplanten digitalen Euro der EZB von einem
+      Euro-Stablecoin einer Bank?
+    evaluation: |
+      Erwartet: Der digitale Euro ist Zentralbankgeld, von der EZB selbst
+      herausgegeben, er ist also selbst der Euro und kann den Peg nicht
+      verlieren. Ein Euro-Stablecoin ist dagegen das Versprechen einer
+      privaten Firma oder Bank, die dafür Reserven hält, mit dem Risiko, dass
+      dieses Versprechen bricht.
+      Erforderlich: nennt, dass der digitale Euro von der Zentralbank
+      (EZB) kommt und selbst Euro ist, während der Euro-Stablecoin von einer
+      Bank oder Firma mit eigenen Reserven kommt.
+      Teilweise: nennt nur eine Seite richtig, zum Beispiel nur, dass der
+      digitale Euro von der EZB kommt, ohne den Unterschied zum Stablecoin zu
+      erklären.
+      Falsch: hält den digitalen Euro selbst für einen Stablecoin der EZB
+      oder sagt, es gebe keinen Unterschied.
+
+  - id: ezb-sorge-dollarisierung
+    title: "Die Sorge der EZB"
+    question: |
+      Welche Sorge hat die EZB, wenn immer mehr Menschen in Europa mit
+      Dollar-Stablecoins statt mit Euro bezahlen?
+    evaluation: |
+      Erwartet: digitale Dollarisierung Europas. Die EZB verliert Einfluss
+      auf Geldmenge und Zinsen, Europa wird abhängiger von US-Firmen und
+      US-Recht, Bankeinlagen wandern ab, und in einer Krise kann ein
+      Herausgeber den Anleihemarkt mitreißen, wenn er Reserven notverkaufen
+      muss.
+      Erforderlich: mindestens einer dieser Punkte, klar auf den
+      Kontrollverlust der EZB oder die Abhängigkeit von den USA bezogen
+      (Formulierungen wie „die EZB hat dann weniger zu sagen“ zählen).
+      Teilweise: nennt nur ein allgemeines Unbehagen („das ist riskant“) ohne
+      zu sagen, wovor sich die EZB konkret fürchtet.
+      Falsch: sagt, die EZB habe kein Problem damit, oder verwechselt die
+      Sorge mit einem rein technischen Problem der Blockchain.
+
+  - id: pro-kontra-weltwirtschaft
+    title: "Pro und Kontra"
+    question: |
+      Nenne je ein Argument für und ein Argument gegen die These
+      „Stablecoins sind gut für die Weltwirtschaft“.
+    evaluation: |
+      Erwartet: ein Pro-Argument (zum Beispiel billigere und schnellere
+      Zahlungen weltweit, Zugang zu stabilem Geld ohne Bankkonto, Schutz der
+      Ersparnisse bei hoher Inflation, Wettbewerbsdruck auf Banken) und ein
+      Kontra-Argument (zum Beispiel Bank-Run-Risiko ohne Einlagensicherung,
+      Ansteckung des Anleihemarkts, Verlust der Währungssouveränität,
+      Machtkonzentration bei zwei Firmen, schwächere Banken).
+      Erforderlich: ein inhaltlich richtiges Pro-Argument und ein inhaltlich
+      richtiges Kontra-Argument, jeweils kurz begründet.
+      Teilweise: nur ein Argument (Pro oder Kontra) ist richtig und begründet,
+      das andere fehlt oder ist nur eine Behauptung ohne Begründung.
+      Falsch: beide Argumente fehlen, oder beide zeigen in dieselbe Richtung
+      (zum Beispiel zwei Pro-Argumente statt Pro und Kontra).

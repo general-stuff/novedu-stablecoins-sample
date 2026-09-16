@@ -1,0 +1,50 @@
+# Vorwort {.unnumbered}
+
+Ein Freund in Buenos Aires bekommt sein Gehalt in Pesos und tauscht es noch am
+selben Tag in digitale Dollar. Warum tut er das, und was hat das mit der EZB,
+mit US-Staatsanleihen und mit deinem Girokonto zu tun? Darum geht es in
+diesem kurzen Buch.
+
+**Stablecoins** sind digitales Geld, das eine private Firma herausgibt und das
+immer genau einen Dollar wert sein soll. Seit 2025 sind sie kein Nischenthema
+mehr. Der Markt liegt bei rund 300 Milliarden Dollar (Stand 2026), die USA
+haben ein eigenes Gesetz dafür, die EU reguliert sie, und Visa, Mastercard und
+PayPal bauen sie ein. Das Thema verbindet vieles, was du aus dem
+Wirtschaftskundeunterricht kennst: die Funktionen des Geldes, Zentralbanken,
+Inflation, Wechselkurse und die Frage, wem wir beim Geld eigentlich
+vertrauen.
+
+Das Buch hat drei Kapitel. Das erste erklärt, was ein Stablecoin ist und wie er
+seinen Wert hält. Im zweiten geht es um zwei Fälle, in denen genau das
+schiefging, Terra 2022 und USDC 2023. Das dritte Kapitel fragt, was Stablecoins
+für die Weltwirtschaft und für Europa bedeuten.
+
+## So arbeitest du mit diesem Buch {.unnumbered}
+
+Zu jedem Kapitel gehören Aktivitäten auf [Novedu](https://novedu.at), der
+KI-Lernplattform, die dieses Buch begleitet:
+
+* Ein **KI-Tutor** beantwortet deine Fragen zum ganzen Thema. Das nächste
+  Kapitel stellt ihn vor.
+* Am Ende jedes inhaltlichen Kapitels wartet ein **Quiz** mit offenen Fragen.
+  Du antwortest in eigenen Worten, und eine KI liest deine Antwort und sagt
+  dir, was passt und was fehlt.
+* Zum Schluss schreibst du einen **Kommentar** für die Schülerzeitung. Ein
+  KI-Coach liest mit und stellt Fragen, schreibt aber keinen Satz für dich.
+
+Alle Zahlen in diesem Buch sind gerundet und beschreiben den Stand von 2026.
+Sie ändern sich schnell. Die Größenordnung zählt, nicht die Nachkommastelle.
+
+Dieses Buch ist keine Anlageberatung. Es erklärt, wie Stablecoins
+funktionieren und welche Risiken sie haben. Ob jemand Kryptowerte kaufen soll,
+ist keine Frage, die ein Schulbuch beantwortet.
+
+::: {.callout-note}
+## Hinweis für Lehrkräfte
+
+Dieses Buch ist ein Beispiel dafür, wie Novedu den Wirtschaftskundeunterricht
+in der Sekundarstufe II unterstützen kann. Es ist kein fertiges Unterrichtsmaterial.
+Alle Aktivitäten (Tutor, drei Quizzes, eine Schreibaufgabe) liegen als YAML-Dateien
+im [Repository dieses Buchs](https://github.com/general-stuff/novedu-stablecoins-sample)
+und lassen sich dort anschauen, kopieren und anpassen.
+:::

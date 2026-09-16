@@ -1,0 +1,117 @@
+---
+title: "Wenn das Versprechen bricht"
+---
+
+Stell dir vor, in deiner Stadt geht das Gerücht um, eine Bank hätte kein Geld
+mehr. Du rennst hin und hebst dein Erspartes ab, bevor es zu spät ist. Nur
+denken das in diesem Moment alle gleichzeitig, und genau das ist das Problem:
+Eine Bank hält nie das ganze Geld ihrer Kundinnen und Kunden bar in der Kasse,
+sie hat einen Teil davon verliehen oder angelegt. Wollen alle auf einmal
+abheben, reicht das Geld nicht, und die Angst nährt sich selbst. Wer zuerst
+kommt, bekommt sein Geld, wer zu spät kommt, geht leer aus. Das nennt man
+einen **Bank Run**. Bei einer echten Bank dauert er Tage, weil Filialen
+schließen und Überweisungen Zeit brauchen. Ein Stablecoin wird rund um die Uhr
+online gehandelt, also läuft derselbe Run in Stunden statt Tagen ab.
+
+Kapitel 1 hat erklärt, was ein Stablecoin ist und wie er seinen Wert halten
+soll. Dieses Kapitel erzählt, was passiert, wenn das Versprechen „immer 1
+Dollar wert“ nicht hält. Die feste Bindung an den Dollar heißt **Peg**. Ist
+ein Coin plötzlich weniger als 1 Dollar wert, sagt man, er hat den Peg
+verloren. Frag den Tutor, wie aus fallendem Vertrauen eine Todesspirale wird,
+oder warum der US-Staat bei der Silicon Valley Bank einsprang, obwohl
+Stablecoins offiziell nicht staatlich abgesichert sind.
+
+{{< tutor stablecoin-tutor >}}
+
+## Der Absturz von TerraUSD {#sec-wenn-das-versprechen-bricht-terra}
+
+Im Mai 2022 war TerraUSD (UST) mit rund 18 Milliarden Dollar der drittgrößte
+Stablecoin der Welt, aber er hatte keine einzige Dollar-Reserve. Statt Geld in
+der Kasse hatte sein Herausgeber nur ein Versprechen: 1 UST lässt sich
+jederzeit gegen Luna-Coins im Wert von 1 Dollar eintauschen, eine eigene,
+schwankende Kryptowährung desselben Projekts. Damit Menschen überhaupt UST
+kauften, lockte das Projekt mit fast 20 Prozent Zinsen im Jahr, ein Angebot,
+das kein normales Sparkonto je bieten könnte.
+
+Am 7. Mai 2022 begannen große Anleger, ihr Geld abzuziehen. UST fiel unter 1
+Dollar. Um den Kurs zu retten, druckte das System massenhaft neue Luna und
+tauschte sie gegen UST. Dadurch fiel der Luna-Kurs, dadurch verloren noch mehr
+Menschen das Vertrauen, dadurch wurden noch mehr Luna gedruckt: eine
+**Todesspirale**, bei der jede Rettungsmaßnahme das Problem größer machte.
+Innerhalb einer einzigen Woche waren rund 40 bis 50 Milliarden Dollar
+vernichtet, viele davon die Ersparnisse von Kleinanlegern, die den fast 20
+Prozent Zinsen vertraut hatten. Der Gründer Do Kwon wurde später verhaftet.
+
+Terra ist der Bank Run vom Anfang dieses Kapitels, nur ohne Reserven und ohne
+Zentralbank, die als letzte Retterin einspringt. Eine Bank kann sich in einer
+Krise zumindest an die Zentralbank wenden und sich dort Geld leihen. Ein
+algorithmischer Stablecoin hat niemanden, an den er sich wenden kann, wenn
+das Vertrauen kippt. Das Versprechen „immer 1 Dollar wert“ ist deshalb nur so
+gut wie das, was wirklich dahintersteht.
+
+## USDC und die Bank, die kollabierte {#sec-wenn-das-versprechen-bricht-usdc}
+
+USDC von Circle galt als der seriöse Gegenentwurf zu Terra, mit echten Dollar-
+Reserven statt eines Algorithmus. Im März 2023 zeigte sich trotzdem, dass
+reservegedeckt allein nicht reicht. Rund 3,3 Milliarden Dollar dieser Reserven
+lagen als Bankguthaben bei der Silicon Valley Bank (SVB). Als die SVB am 9.
+und 10. März 2023 zusammenbrach, fürchteten Anleger, Circle käme nicht mehr an
+dieses Geld. USDC verlor den Peg und fiel über das Wochenende auf bis zu 0,87
+Dollar.
+
+Erst als die US-Regierung ankündigte, alle Einlagen der SVB abzusichern, auch
+die eigentlich unversicherten, kehrte USDC auf 1 Dollar zurück. Die Lehre
+daraus: Es reicht nicht, dass Reserven existieren, es kommt auch darauf an,
+wo sie liegen und ob sie im Ernstfall sofort verfügbar sind.
+
+Eine zweite Lehre beunruhigt zusätzlich die Zentralbanken: Der Staat musste
+einspringen, obwohl Stablecoins offiziell keine staatliche Absicherung haben.
+Ohne dieses Eingreifen wäre USDC vermutlich tiefer gefallen.
+
+## Tether: Vertrauen ohne vollständige Prüfung {#sec-wenn-das-versprechen-bricht-tether}
+
+Tether (USDT) ist der größte Stablecoin der Welt, und er zeigt ein anderes
+Risiko: eines, das nicht in einer einzigen Woche explodiert, sondern seit
+über zehn Jahren im Hintergrund läuft. Tether hat in dieser Zeit nie eine
+vollständige Prüfung durch einen großen Wirtschaftsprüfer vorgelegt, nur
+„Bescheinigungen“, die den Bestand an einzelnen Stichtagen bestätigen. Laut
+eigenen Angaben hat erst 2026 eine echte Prüfung begonnen.
+
+Ein Teil der Unsicherheit liegt auch in dem, was Tether als Reserve hält.
+Neben Staatsanleihen besitzt das Unternehmen Gold im Wert von rund 17
+Milliarden Dollar und Bitcoin im Wert von rund 8 Milliarden Dollar (Stand
+2026), also Vermögenswerte, deren Kurs schwankt, nicht nur sichere, feste
+Beträge. In der EU ist USDT nicht als MiCA-konform zugelassen und wurde
+deshalb von regulierten Börsen für Kundinnen und Kunden in der EU weitgehend
+entfernt.
+
+Trotzdem nutzen Millionen Menschen weltweit täglich USDT, auf Kryptobörsen
+genauso wie beim Sparen in Ländern mit hoher Inflation. Überleg dir, warum:
+Welche Alternativen hat jemand, der seiner eigenen Währung nicht traut, und
+was hält Menschen in einem Netzwerk, das schon so groß ist, dass niemand als
+Erster wechseln will?
+
+::: {.callout-note}
+## Stimmt das?
+
+**„Stablecoins sind immer 1 Dollar wert.“** Sie sollen es sein, aber ein
+Versprechen ist kein Naturgesetz. USDC fiel 2023 auf 0,87 Dollar, TerraUSD
+2022 fast auf null.
+
+**„Mein Geld ist wie am Bankkonto abgesichert.“** Nein. Für Bankguthaben gibt
+es in der EU eine Einlagensicherung bis 100.000 Euro. Für Stablecoins gibt es
+so etwas nicht. Geht der Herausgeber pleite, bist du Gläubigerin oder
+Gläubiger wie jede andere Firma auch.
+
+**„Stablecoins bringen Zinsen.“** In der Regel nicht. Der Herausgeber legt
+deine Dollar an und behält die Zinsen selbst, das ist sein Geschäftsmodell.
+Ein Angebot mit hohen Zinsen, so wie die fast 20 Prozent bei Terra, ist kein
+Bonus, sondern ein Warnsignal.
+:::
+
+## Teste dein Wissen {#sec-wenn-das-versprechen-bricht-quiz}
+
+Fünf kurze Fragen prüfen, ob du erklären kannst, wie ein Stablecoin sein
+Versprechen brechen kann und warum das an einen Bank Run erinnert.
+
+{{< quiz wenn-das-versprechen-bricht title="Wenn das Versprechen bricht" >}}

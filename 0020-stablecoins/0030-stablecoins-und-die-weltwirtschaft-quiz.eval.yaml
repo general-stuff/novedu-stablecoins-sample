@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/evals/eval-yaml.schema.json
+# Golden-answer regression cases for the "Stablecoins und die Weltwirtschaft"
+# chapter quiz (0020-stablecoins/0030-stablecoins-und-die-weltwirtschaft-quiz.yaml).
+# One correct, one partial, one incorrect per question. Teacher-only test
+# data; never publish as an activity. Grading runs on the quiz's own small
+# model (Qwen on SCCH, free); the feedback audit uses a frontier judge via
+# --judge-llm-*, so run it after rubric changes, not routinely.
+
+id: stablecoins-und-die-weltwirtschaft-quiz-eval
+target: ./0030-stablecoins-und-die-weltwirtschaft-quiz.yaml
+
+questions:
+  - question: nigeria-argentinien-gruende
+    answers:
+      - expect: correct
+        answer: |
+          weil ihre eigene währung immer weniger wert wird und sie oft gar
+          nicht so einfach an echte dollar rankommen
+      # Only one reason, no second aspect.
+      - expect: partial
+        answer: |
+          weil die inflation dort so hoch ist
+      - expect: incorrect
+        answer: |
+          weil krypto in nigeria und argentinien einfach total angesagt ist
+          und alle jungen leute damit zocken wollen
+
+  - question: staatsanleihen-usa
+    answers:
+      - expect: correct
+        answer: |
+          die legen das geld von den kunden in us-staatsanleihen an, weil das
+          sicher ist und zinsen bringt, und die zinsen behalten sie selbst.
+          dadurch bekommen die usa quasi neue große geldgeber und der dollar
+          wird gestärkt
+      # Only the profit motive, no US-side effect.
+      - expect: partial
+        answer: |
+          die verdienen damit einfach zinsen, das ist ihr geschäftsmodell
+      - expect: incorrect
+        answer: |
+          die kaufen damit aktien von großen us-firmen und hoffen dass die
+          kurse steigen
+
+  - question: digitaler-euro-vs-stablecoin
+    answers:
+      - expect: correct
+        answer: |
+          der digitale euro kommt direkt von der ezb und ist selber der
+          euro, der kann also nicht wackeln. ein euro-stablecoin dagegen
+          kommt von einer bank oder firma, die dafür reserven halten muss,
+          und das kann theoretisch schiefgehen
+      # Only says who issues it, no comparison to the stablecoin's risk.
+      - expect: partial
+        answer: |
+          der digitale euro wird von der ezb rausgegeben
+      - expect: incorrect
+        answer: |
+          das ist eigentlich das gleiche, der digitale euro ist halt einfach
+          der stablecoin von der ezb
+
+  - question: ezb-sorge-dollarisierung
+    answers:
+      - expect: correct
+        answer: |
+          die ezb hat angst dass sie dann weniger kontrolle über die
+          geldmenge und die zinsen hat, weil europa dann von us-firmen
+          abhängig wird und geld von den bankkonten abwandert
+      # Vague unease, no concrete mechanism.
+      - expect: partial
+        answer: |
+          die ezb findet das einfach irgendwie riskant
+      - expect: incorrect
+        answer: |
+          der ezb ist das eigentlich egal, hauptsache die technik
+          funktioniert und die blockchain läuft stabil
+
+  - question: pro-kontra-weltwirtschaft
+    answers:
+      - expect: correct
+        answer: |
+          pro: leute ohne bankkonto kommen an stabiles geld, weil sie nur ein
+          handy brauchen. kontra: es gibt keine einlagensicherung, wenn die
+          firma pleitegeht ist das geld weg
+      # Only the pro side, contra side missing.
+      - expect: partial
+        answer: |
+          pro finde ich gut dass zahlungen ins ausland viel billiger und
+          schneller werden
+      - expect: incorrect
+        answer: |
+          pro: zahlungen werden schneller und billiger. contra: und man
+          braucht nicht mal ein bankkonto dafür, das hilft armen ländern

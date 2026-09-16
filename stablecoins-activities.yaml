@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/registry/registry-yaml.schema.json
+# Activity registry for the Stablecoins sample book.
+#
+# Every Novedu activity a chapter links to is listed here under a stable KEY;
+# the chapters reference that key, never a code:
+#
+#     {{< quiz was-ist-ein-stablecoin title="Was ist ein Stablecoin?" >}}
+#
+# Reconcile it with Novedu and regenerate the lock file with (from the Novedu
+# repo, absolute path):
+#
+#     npm run cli --silent -- codes sync /path/to/stablecoins-activities.yaml
+#
+# Commit BOTH this file and stablecoins-activities.lock.yaml. Format reference:
+# https://novedu.at/docs (Activity registry)
+
+# Novedu re-reads the activity YAML from this repository's raw URLs on every
+# load, so publishing an activity edit is a plain `git push`. The repo must be
+# pushed before the first sync, or every entry fails with FETCH_FAILED.
+base-url: "https://raw.githubusercontent.com/general-stuff/novedu-stablecoins-sample/refs/heads/main/"
+
+activities:
+  # One tutor for the whole topic, introduced in the first chapter and linked
+  # again at the start of every content chapter.
+  tutors:
+    stablecoin-tutor:
+      file: 0010-einstieg/stablecoin-tutor.yaml
+      note: "Stablecoins sample book: tutor for the whole topic, GitHub-hosted"
+
+  # One quiz per content chapter, keyed by chapter slug.
+  quizzes:
+    was-ist-ein-stablecoin:
+      file: 0020-stablecoins/0010-was-ist-ein-stablecoin-quiz.yaml
+      note: "Stablecoins sample book: Was ist ein Stablecoin? (0010), GitHub-hosted"
+    wenn-das-versprechen-bricht:
+      file: 0020-stablecoins/0020-wenn-das-versprechen-bricht-quiz.yaml
+      note: "Stablecoins sample book: Wenn das Versprechen bricht (0020), GitHub-hosted"
+    stablecoins-und-die-weltwirtschaft:
+      file: 0020-stablecoins/0030-stablecoins-und-die-weltwirtschaft-quiz.yaml
+      note: "Stablecoins sample book: Stablecoins und die Weltwirtschaft (0030), GitHub-hosted"
+
+  # Writing activity: the student drafts a Kommentar, an AI coach reads it and
+  # asks questions but cannot edit it. Not anonymous: the teacher reads the
+  # saved texts.
+  writing:
+    kommentar:
+      file: 0020-stablecoins/0030-kommentar-writing.yaml
+      note: "Stablecoins sample book: Kommentar für die Schülerzeitung (0030), GitHub-hosted"

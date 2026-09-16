@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Teaching-HTL-Leonding/novedu-chat-mvp/refs/heads/main/activities/evals/eval-yaml.schema.json
+# Golden-answer regression cases for the "Wenn das Versprechen bricht" chapter
+# quiz (0020-stablecoins/0020-wenn-das-versprechen-bricht-quiz.yaml). One correct,
+# one partial, and one incorrect answer per question. Teacher-only test data;
+# never publish as an activity. Grading runs on the quiz's own small model
+# (Qwen on SCCH, free); the feedback audit uses a frontier judge via
+# --judge-llm-* and costs money, so run it after rubric changes, not
+# routinely.
+
+id: wenn-das-versprechen-bricht-quiz-eval
+target: ./0020-wenn-das-versprechen-bricht-quiz.yaml
+
+questions:
+  - question: terra-crash
+    answers:
+      - expect: correct
+        answer: |
+          UST hatte gar keine echten dollar reserven, es war nur an den
+          eigenen luna coin gekoppelt. als im mai 2022 große anleger ihr geld
+          abgezogen haben ist der kurs gefallen, dann wurde massig neue luna
+          gedruckt und der wert ist in einer todesspirale komplett
+          zusammengebrochen.
+      # Names only the withdrawal, no mechanism.
+      - expect: partial
+        answer: |
+          weil ganz viele leute auf einmal ihr geld abgezogen haben
+      - expect: incorrect
+        answer: |
+          terra wurde gehackt und die hacker haben alle coins gestohlen,
+          deshalb ist der kurs abgestürzt
+
+  - question: peg-verlieren
+    answers:
+      - expect: correct
+        answer: |
+          das heißt der coin ist plötzlich nicht mehr genau 1 dollar wert,
+          sondern weniger. zum beispiel ist usdc im märz 2023 auf 0,87 dollar
+          gefallen
+      # Only the example, no general explanation.
+      - expect: partial
+        answer: |
+          so wie bei usdc 2023
+      - expect: incorrect
+        answer: |
+          das heißt der coin bringt dir extra zinsen wenn du ihn lang genug
+          hältst
+
+  - question: bank-run-stablecoin
+    answers:
+      - expect: correct
+        answer: |
+          ein bank run ist wenn ganz viele leute gleichzeitig ihr geld
+          abheben wollen und die bank nicht genug bar hat um alle
+          auszuzahlen. bei einem stablecoin kann das genauso passieren, weil
+          es keine einlagensicherung und keine zentralbank gibt die einspringt,
+          und weil das online alles viel schneller geht
+      # Only the general bank run idea, no link to stablecoins.
+      - expect: partial
+        answer: |
+          das ist wenn alle leute auf einmal zur bank rennen und ihr geld
+          wollen weil sie angst haben
+      - expect: incorrect
+        answer: |
+          ein bank run kann bei einem stablecoin nicht passieren, das ist ja
+          keine richtige bank sondern nur eine app
+
+  - question: usdc-svb
+    answers:
+      - expect: correct
+        answer: |
+          ein teil von den usdc reserven, rund 3,3 milliarden dollar, lag bei
+          der silicon valley bank. als die bank pleite gegangen ist hatten
+          die leute angst dass circle das geld nicht mehr kriegt, deshalb ist
+          der kurs gefallen
+      # Names the bank collapse, not the link to USDC reserves.
+      - expect: partial
+        answer: |
+          weil im märz 2023 eine große bank zusammengebrochen ist
+      - expect: incorrect
+        answer: |
+          usdc hatte in wirklichkeit auch gar keine echten reserven, genau wie
+          terra
+
+  - question: hohe-zinsen-warnsignal
+    answers:
+      - expect: correct
+        answer: |
+          normale stablecoins zahlen kaum zinsen, die firma behält die zinsen
+          aus den reserven selbst. 20 prozent ist total unrealistisch, genau
+          mit so einem versprechen hat terra auch anleger gelockt und ist
+          dann zusammengebrochen
+      # Says only "too high", no comparison.
+      - expect: partial
+        answer: |
+          das klingt einfach zu gut um wahr zu sein
+      - expect: incorrect
+        answer: |
+          das ist einfach ein gutes angebot, manche stablecoins zahlen halt
+          mehr zinsen als andere

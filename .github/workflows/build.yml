@@ -1,0 +1,119 @@
+# ---------------------------------------------------------------------------
+# Builds the Quarto book on every push / pull request and publishes two build
+# artifacts:
+#   * stablecoins-pdf     -> the single combined PDF (book.pdf)
+#   * stablecoins-website -> the HTML book, zipped
+#
+# Both formats come out of ONE `quarto render` into `_output/`, so the HTML
+# book's "PDF herunterladen" link points at a PDF that really exists.
+#
+# Pushes to main (not pull requests) also deploy `_output/` to GitHub Pages:
+# the book at the site root, the PDF at /book.pdf.
+# ---------------------------------------------------------------------------
+name: Build book
+
+on:
+  push:
+    branches: [main]
+    # Changes to these never alter the rendered book, so they must not burn a
+    # CI run. Novedu reads the activity YAML straight from the raw GitHub URL;
+    # the book only links to the activities.
+    paths-ignore:
+      - '.agents/**'          # AI agent skills
+      - '.claude'             # symlink to .agents
+      - '**/*-quiz.yaml'      # Novedu quiz sources
+      - '**/*-tutor.yaml'     # Novedu tutor sources
+      - '**/*-writing.yaml'   # Novedu writing sources
+      - '**/*.eval.yaml'      # eval cases (teacher-only)
+      - 'eval-results/**'     # eval reports
+      - '**/*.md'             # notes/READMEs — book chapters are .qmd
+      - '.gitignore'
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - '.agents/**'
+      - '.claude'
+      - '**/*-quiz.yaml'
+      - '**/*-tutor.yaml'
+      - '**/*-writing.yaml'
+      - '**/*.eval.yaml'
+      - 'eval-results/**'
+      - '**/*.md'
+      - '.gitignore'
+  workflow_dispatch:
+
+# A newer push to the same branch makes an in-flight build obsolete.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      # Quarto rasterizes SVG images to PDF for the LaTeX pass; that conversion
+      # is done by rsvg-convert, which is not preinstalled.
+      - name: Install rsvg-convert (SVG -> PDF for the LaTeX pass)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends librsvg2-bin
+
+      # Pin the Quarto version so CI output matches what we render locally.
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.40
+          tinytex: true
+
+      # One render produces both formats. Quarto pulls any missing LaTeX
+      # packages (qrcode, koma-script, ...) into TinyTeX on demand.
+      - name: Render book (HTML + PDF)
+        run: quarto render
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v5
+        with:
+          name: stablecoins-pdf
+          path: _output/book.pdf
+          if-no-files-found: error
+
+      - name: Zip website
+        run: |
+          cd _output
+          zip -r ../stablecoins-website.zip . -x '*.DS_Store'
+
+      - name: Upload website zip
+        uses: actions/upload-artifact@v5
+        with:
+          name: stablecoins-website
+          path: stablecoins-website.zip
+          if-no-files-found: error
+
+      # Pull requests build the book but never publish it.
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _output
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    # Only this job may write to Pages; the build job stays read-only.
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
